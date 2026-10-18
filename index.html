@@ -8,10 +8,17 @@
 <meta name="author" content="Dyuliano Cecilio de Souza">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Dyuliano Cecilio">
-<meta property="og:description" content="Liderança em tecnologia, operações Cloud, ERP e IA aplicada. Da linha de código à mesa da diretoria.">
+<meta property="og:description" content="18 anos de carreira em tecnologia: liderança de times, operações Cloud, ERP e IA aplicada. Da linha de código à mesa da diretoria.">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Dyuliano Cecilio">
 <meta property="og:url" content="https://dyuliano.github.io/">
-<meta property="og:image" content="https://dyuliano.github.io/assets/foto.jpg">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://dyuliano.github.io/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Dyuliano Cecilio, liderança em tecnologia, operações Cloud, ERP e IA aplicada">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://dyuliano.github.io/">
+<link rel="apple-touch-icon" href="assets/foto.jpg">
 <meta name="theme-color" content="#0B1622">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1622'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='34' fill='%23C9A35B'%3EDC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +27,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Dyuliano Cecilio de Souza","jobTitle":"Coordenador de Cloud","worksFor":{"@type":"Organization","name":"TOTVS"},"address":{"@type":"PostalAddress","addressCountry":"BR"},"url":"https://dyuliano.github.io/","sameAs":["https://www.linkedin.com/in/dyuliano/","https://github.com/dyuliano","https://huggingface.co/dyulianocecilio"]}
 </script>
+<noscript><style>#intro{display:none}body.loading{overflow:auto}.reveal,.fade{opacity:1!important;transform:none!important}.hero h1 .ch{transform:none}.portrait .frame{clip-path:none!important}.manifesto .w{color:var(--text)}</style></noscript>
 <style>
 :root{
   --ink:#0B1622;
@@ -71,7 +79,23 @@ nav.top ul a{text-decoration:none;font-size:15px;color:var(--muted);transition:c
 nav.top ul a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--brass);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
 nav.top ul a:hover,nav.top ul a.active{color:var(--text)}
 nav.top ul a:hover::after,nav.top ul a.active::after{transform:scaleX(1);transform-origin:left}
-@media (max-width:860px){nav.top ul{display:none}}
+.menu-btn{all:unset;display:none;cursor:pointer;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);position:relative;z-index:2}
+.menu-btn:focus-visible{outline:2px solid var(--brass-hi);outline-offset:4px}
+.menu-btn i{position:absolute;left:13px;right:13px;height:1.5px;background:var(--brass);transition:transform .5s var(--ease),top .5s var(--ease)}
+.menu-btn i:nth-child(1){top:18px}.menu-btn i:nth-child(2){top:25px}
+nav.top.open .menu-btn i:nth-child(1){top:21.5px;transform:rotate(45deg)}
+nav.top.open .menu-btn i:nth-child(2){top:21.5px;transform:rotate(-45deg)}
+@media (max-width:860px){
+  .menu-btn{display:block}
+  nav.top ul{position:fixed;inset:0;flex-direction:column;justify-content:center;gap:6px;padding:0 var(--gutter);background:rgba(11,22,34,.97);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);opacity:0;visibility:hidden;transition:opacity .45s var(--ease),visibility .45s}
+  nav.top.open ul{opacity:1;visibility:visible}
+  nav.top ul a{font-family:var(--serif);font-size:clamp(34px,9vw,52px);color:var(--text);display:block;padding:6px 0}
+  nav.top ul a::after{display:none}
+  nav.top ul li{transform:translateY(16px);opacity:0;transition:transform .6s var(--ease),opacity .6s}
+  nav.top.open ul li{transform:none;opacity:1}
+  nav.top.open ul li:nth-child(2){transition-delay:.05s}nav.top.open ul li:nth-child(3){transition-delay:.1s}nav.top.open ul li:nth-child(4){transition-delay:.15s}nav.top.open ul li:nth-child(5){transition-delay:.2s}
+  .mono{position:relative;z-index:2}
+}
 
 /* ---------- hero ---------- */
 .hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;isolation:isolate}
@@ -165,10 +189,11 @@ section{position:relative;padding:clamp(96px,14vw,180px) 0}
 /* ---------- pillars ---------- */
 .pillars{border-top:1px solid var(--line)}
 .pillar{border-bottom:1px solid var(--line)}
+.pillar .ph{margin:0;font:inherit}
 .pillar button{all:unset;box-sizing:border-box;cursor:pointer;width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:24px;padding:clamp(22px,3vw,36px) 0}
 .pillar button:focus-visible{outline:2px solid var(--brass-hi);outline-offset:4px}
-.pillar h3{font-family:var(--serif);font-weight:400;font-size:clamp(28px,4vw,56px);line-height:1.05;letter-spacing:-.02em;margin:0;transition:color .4s,transform .6s var(--ease)}
-.pillar button:hover h3{color:var(--brass);transform:translateX(12px)}
+.pillar .pt{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(28px,4vw,56px);line-height:1.05;letter-spacing:-.02em;margin:0;transition:color .4s,transform .6s var(--ease)}
+.pillar button:hover .pt{color:var(--brass);transform:translateX(12px)}
 .pillar .plus{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);position:relative;flex:none;transition:transform .6s var(--ease),background .3s}
 .pillar .plus::before,.pillar .plus::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:1.5px;background:var(--brass);transform:translate(-50%,-50%)}
 .pillar .plus::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .6s var(--ease)}
@@ -276,6 +301,22 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 #glow{position:fixed;left:0;top:0;width:320px;height:320px;margin:-160px 0 0 -160px;border-radius:50%;pointer-events:none;z-index:1;background:radial-gradient(circle,rgba(201,163,91,.028),transparent 65%);opacity:0;transition:opacity .6s}
 @media (hover:hover) and (pointer:fine){body.ready #glow{opacity:1}}
 
+@media print{
+  :root{--ink:#fff;--deep:#fff;--text:#111;--muted:#444;--brass:#7a5a1e;--brass-hi:#7a5a1e;--line:#ccc;--hair:#ddd}
+  body{background:#fff;font-size:11pt}
+  body::after,#intro,#glow,.progress,nav.top,#net,.scroll-cue,.marquee,.term,.dots-box,.actions,.links,.plus,.hero::before{display:none!important}
+  .reveal,.fade{opacity:1!important;transform:none!important}
+  .hero h1 .ch{transform:none!important}
+  .hero{min-height:0}.hero .wrap{padding:0 0 24px}
+  .portrait{width:150px}.portrait .frame{clip-path:none!important}.portrait .ring,.portrait .tag{display:none}
+  section{padding:28px 0}
+  .manifesto .w{color:#111!important}
+  .pillar .body{grid-template-rows:1fr!important}
+  .impact,.career{background:#fff}
+  .stop,.pillar,.fig,.skill{break-inside:avoid}
+  .tl .rail i{transform:none!important}
+  a{text-decoration:none}
+}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
   html{scroll-behavior:auto}
@@ -299,13 +340,14 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 <nav class="top" id="nav" aria-label="Seções">
   <div class="wrap">
     <a class="mono" href="#inicio" aria-label="Início">DC</a>
-    <ul>
+    <ul id="menu">
       <li><a href="#impacto">Impacto</a></li>
       <li><a href="#lideranca">Liderança</a></li>
       <li><a href="#trajetoria">Trajetória</a></li>
       <li><a href="#ia">IA e inovação</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i></button>
   </div>
 </nav>
 
@@ -381,28 +423,28 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     </div>
     <div class="pillars reveal">
       <div class="pillar open">
-        <button aria-expanded="true" aria-controls="p1"><h3>Estratégia, orçamento e governança</h3><span class="plus" aria-hidden="true"></span></button>
+        <h3 class="ph"><button aria-expanded="true" aria-controls="p1"><span class="pt">Estratégia, orçamento e governança</span><span class="plus" aria-hidden="true"></span></button></h3>
         <div class="body" id="p1"><div><div class="inner">
           <p>Defino roadmap, priorizo por capacidade e transformo investimento em tecnologia em decisão de negócio — com análise de risco e viabilidade, e reporte direto à diretoria e à gerência executiva.</p>
           <ul><li>Roadmap de tecnologia</li><li>Orçamento de TI</li><li>Risco e viabilidade</li><li>Reporte à diretoria</li><li>Governança e segurança da informação</li></ul>
         </div></div></div>
       </div>
       <div class="pillar">
-        <button aria-expanded="false" aria-controls="p2"><h3>Pessoas e times de alto desempenho</h3><span class="plus" aria-hidden="true"></span></button>
+        <h3 class="ph"><button aria-expanded="false" aria-controls="p2"><span class="pt">Pessoas e times de alto desempenho</span><span class="plus" aria-hidden="true"></span></button></h3>
         <div class="body" id="p2"><div><div class="inner">
           <p>Minha principal marca. Formo analistas e desenvolvedores multidisciplinares, construo times autônomos e cuido de carreira de forma concreta: mais de dez profissionais desenvolvidos até virarem referência, com promoções de analista a especialista.</p>
           <ul><li>Mentoria</li><li>Planos de carreira</li><li>Avaliação de desempenho</li><li>OKRs</li><li>Scrum e Kanban</li><li>Times remotos e híbridos</li></ul>
         </div></div></div>
       </div>
       <div class="pillar">
-        <button aria-expanded="false" aria-controls="p3"><h3>Operação, eficiência e cliente</h3><span class="plus" aria-hidden="true"></span></button>
+        <h3 class="ph"><button aria-expanded="false" aria-controls="p3"><span class="pt">Operação, eficiência e cliente</span><span class="plus" aria-hidden="true"></span></button></h3>
         <div class="body" id="p3"><div><div class="inner">
           <p>Operações críticas com SLA e tempo médio de resolução sob controle, gestão de capacidade e custo, e atuação direta em retenção: análise de insatisfação, planos de reversão e atendimento dedicado para contas estratégicas.</p>
           <ul><li>SLA e TMR</li><li>Gestão de capacidade</li><li>Custo operacional</li><li>Redução de churn</li><li>Gestão de crise e causa raiz</li></ul>
         </div></div></div>
       </div>
       <div class="pillar">
-        <button aria-expanded="false" aria-controls="p4"><h3>Inovação e IA aplicada</h3><span class="plus" aria-hidden="true"></span></button>
+        <h3 class="ph"><button aria-expanded="false" aria-controls="p4"><span class="pt">Inovação e IA aplicada</span><span class="plus" aria-hidden="true"></span></button></h3>
         <div class="body" id="p4"><div><div class="inner">
           <p>Levo IA para onde ela gera ganho real: na operação, na rotina das equipes e dentro do ERP. Do ajuste fino de modelos à adoção pelo time, com automação como alavanca de escala.</p>
           <ul><li>LLMs e fine-tuning</li><li>IA local</li><li>Agentes</li><li>Automação de operações</li><li>Adoção de IA pelas equipes</li></ul>
@@ -435,7 +477,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <p class="org">CSN · Prepara · ORMEC Engenharia</p>
         <h3>Fundamentos</h3>
         <ul>
-          <li>Início como estagiário na CSN, passagem como instrutor de tecnologia e primeiro contato profundo com o ERP.</li>
+          <li>Início como estagiário na CSN e passagem como instrutor de tecnologia na Prepara.</li>
           <li>Na ORMEC Engenharia, <b>implantação e suporte do TOTVS Protheus</b>: a base técnica e funcional que sustenta toda a carreira.</li>
         </ul>
       </article>
@@ -452,7 +494,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
       <article class="stop">
         <div class="yr">2016<small>a 2019</small></div>
-        <p class="org">Fundação CSN · Volta Redonda/RJ</p>
+        <p class="org">Fundação CSN</p>
         <h3>Analista de Sistemas Sênior</h3>
         <p class="ctx">Primeira posição de liderança: responsável pela área de sistemas e desenvolvimento.</p>
         <ul>
@@ -478,7 +520,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
       <article class="stop">
         <div class="yr">2021<small>a 2022</small></div>
-        <p class="org">Cinbal, Grupo Incoflandres · Volta Redonda/RJ</p>
+        <p class="org">Cinbal, Grupo Incoflandres · indústria do aço</p>
         <h3>Coordenador de Tecnologia e Desenvolvimento</h3>
         <p class="ctx">Tecnologia da maior empresa de litografia e beneficiamento de aços planos das Américas, reportando à gerência executiva.</p>
         <ul>
@@ -490,7 +532,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
       <article class="stop now">
         <div class="yr">2022<small>até hoje</small></div>
-        <p class="org">TOTVS S/A · Joinville/SC</p>
+        <p class="org">TOTVS S/A · maior empresa de software do Brasil</p>
         <h3>Coordenador de Cloud</h3>
         <p class="ctx">Operação Cloud das linhas TOTVS Fluig e TOTVS Agro, com responsabilidade sobre time, indicadores, eficiência operacional e experiência do cliente.</p>
         <ul>
@@ -524,7 +566,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <p>Concepção e desenvolvimento de sistemas e aplicativos de gestão para executivos, publicados na App Store e no Google Play.</p>
       </div>
     </div>
-    <div class="term reveal" aria-label="Exemplo de uso do modelo ADVPL AI">
+    <div class="term reveal" role="img" aria-label="Exemplo de uso do modelo ADVPL AI gerando um ponto de entrada em ADVPL">
       <div class="bar"><i></i><i></i><i></i><span>advpl-ai · local</span></div>
       <pre id="termOut" aria-hidden="true"></pre>
     </div>
@@ -585,7 +627,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 </main>
 
 <footer>
-  <div class="wrap"><span>Dyuliano Cecilio de Souza</span><span>Brasil</span></div>
+  <div class="wrap"><span>Dyuliano Cecilio de Souza</span><span>Brasil · <a href="#inicio">Voltar ao topo</a></span></div>
 </footer>
 
 <script>
@@ -609,7 +651,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   /* intro: years 2008 -> current */
   const start = () => { document.body.classList.remove('loading'); document.body.classList.add('ready'); };
   const intro = $('#intro');
-  if (reduce) { intro.remove(); start(); }
+  let seen = false; try { seen = sessionStorage.getItem('introSeen') === '1'; sessionStorage.setItem('introSeen', '1'); } catch (e) {}
+  if (reduce || seen) { intro.remove(); start(); }
   else {
     const y0 = 2008, y1 = new Date().getFullYear(), dur = 1500, t0 = performance.now();
     const yEl = $('#introYear'), bar = $('#introBar');
@@ -623,6 +666,13 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     requestAnimationFrame(tick);
     setTimeout(() => { if (!document.body.classList.contains('ready')) { intro.classList.add('done'); start(); setTimeout(() => intro.remove(), 1200); } }, 3200);
   }
+
+  /* mobile menu */
+  const navEl = $('#nav'), mb = $('#menuBtn');
+  const setMenu = open => { navEl.classList.toggle('open', open); mb.setAttribute('aria-expanded', open); mb.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu'); document.body.style.overflow = open ? 'hidden' : ''; };
+  mb.addEventListener('click', () => setMenu(!navEl.classList.contains('open')));
+  $$('#menu a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
 
   /* nav state + progress + timeline rail */
   const nav = $('#nav'), prog = $('#progress'), tl = $('#tl'), rail = $('#railFill');
@@ -674,7 +724,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
   /* pillars accordion */
   $$('.pillar button').forEach(b => b.addEventListener('click', () => {
-    const p = b.parentElement, open = !p.classList.contains('open');
+    const p = b.closest('.pillar'), open = !p.classList.contains('open');
     p.classList.toggle('open', open); b.setAttribute('aria-expanded', open);
   }));
 
