@@ -18,6 +18,9 @@
 <meta property="og:image:alt" content="Dyuliano Cecilio, liderança em tecnologia, operações Cloud, ERP e IA aplicada">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://dyuliano.github.io/">
+<link rel="alternate" hreflang="pt-BR" href="https://dyuliano.github.io/">
+<link rel="alternate" hreflang="en" href="https://dyuliano.github.io/en/">
+<link rel="alternate" hreflang="x-default" href="https://dyuliano.github.io/">
 <link rel="apple-touch-icon" href="assets/foto.jpg">
 <meta name="theme-color" content="#0B1622">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1622'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='34' fill='%23C9A35B'%3EDC%3C/text%3E%3C/svg%3E">
@@ -79,6 +82,9 @@ nav.top ul a{text-decoration:none;font-size:15px;color:var(--muted);transition:c
 nav.top ul a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--brass);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
 nav.top ul a:hover,nav.top ul a.active{color:var(--text)}
 nav.top ul a:hover::after,nav.top ul a.active::after{transform:scaleX(1);transform-origin:left}
+.nav-r{display:flex;align-items:center;gap:22px}
+.lang{font-size:13px;font-weight:600;letter-spacing:.04em;text-decoration:none;color:var(--brass);border:1px solid var(--line);border-radius:999px;padding:6px 12px;transition:background .3s,border-color .3s;position:relative;z-index:2}
+.lang:hover{border-color:var(--brass);background:rgba(201,163,91,.1)}
 .menu-btn{all:unset;display:none;cursor:pointer;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);position:relative;z-index:2}
 .menu-btn:focus-visible{outline:2px solid var(--brass-hi);outline-offset:4px}
 .menu-btn i{position:absolute;left:13px;right:13px;height:1.5px;background:var(--brass);transition:transform .5s var(--ease),top .5s var(--ease)}
@@ -285,6 +291,16 @@ section{position:relative;padding:clamp(96px,14vw,180px) 0}
 .marquee:hover .track{animation-play-state:paused}
 @keyframes slide{to{transform:translateX(-50%)}}
 
+/* ---------- projects ---------- */
+.proj-list{border-top:1px solid var(--line)}
+.prj{display:grid;grid-template-columns:150px minmax(0,1fr) minmax(0,1.25fr);gap:clamp(16px,3vw,48px);padding:clamp(22px,2.6vw,32px) 0;border-bottom:1px solid var(--hair);align-items:baseline;transition:background .4s}
+.prj .when{font-family:var(--serif);font-size:20px;color:var(--brass);font-variant-numeric:lining-nums;white-space:nowrap}
+.prj .when small{display:block;font-family:var(--sans);font-size:13.5px;color:var(--muted);margin-top:4px;white-space:normal}
+.prj h3{font-family:var(--serif);font-weight:500;font-size:clamp(22px,2.3vw,30px);line-height:1.15;letter-spacing:-.01em;margin:0;transition:color .4s,transform .6s var(--ease)}
+.prj p{margin:0;color:var(--muted)}
+.prj:hover h3{color:var(--brass-hi);transform:translateX(8px)}
+@media (max-width:860px){.prj{grid-template-columns:1fr;gap:8px}.prj .when small{display:inline;margin-left:10px}}
+
 /* ---------- skills ---------- */
 .skills .cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(28px,4vw,56px) clamp(24px,4vw,64px)}
 .skill h3{font-size:18px;font-weight:600;margin:0 0 12px;padding-top:18px;border-top:1px solid var(--line)}
@@ -321,7 +337,7 @@ section{position:relative;padding:clamp(96px,14vw,180px) 0}
 @media print{
   :root{--ink:#fff;--deep:#fff;--text:#111;--muted:#444;--brass:#7a5a1e;--brass-hi:#7a5a1e;--line:#ccc;--hair:#ddd}
   body{background:#fff;font-size:11pt}
-  body::after,#intro,#glow,.progress,nav.top,#net,.scroll-cue,.marquee,.term,.dots-box,.actions,.links,.plus,.hero::before{display:none!important}
+  body::after,#intro,#glow,.progress,nav.top,.lang,#net,.scroll-cue,.marquee,.term,.dots-box,.actions,.links,.plus,.hero::before{display:none!important}
   .reveal,.fade{opacity:1!important;transform:none!important}
   .hero h1 .ch{transform:none!important}
   .hero{min-height:0}.hero .wrap{padding:0 0 24px}
@@ -357,14 +373,18 @@ section{position:relative;padding:clamp(96px,14vw,180px) 0}
 <nav class="top" id="nav" aria-label="Seções">
   <div class="wrap">
     <a class="mono" href="#inicio" aria-label="Início">DC</a>
+    <div class="nav-r">
     <ul id="menu">
       <li><a href="#impacto">Impacto</a></li>
       <li><a href="#lideranca">Liderança</a></li>
       <li><a href="#trajetoria">Trajetória</a></li>
+      <li><a href="#projetos">Projetos</a></li>
       <li><a href="#ia">IA e inovação</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
+    <a class="lang" href="en/" hreflang="en" lang="en" aria-label="English version">EN</a>
     <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i></button>
+    </div>
   </div>
 </nav>
 
@@ -382,6 +402,10 @@ section{position:relative;padding:clamp(96px,14vw,180px) 0}
         <a class="btn ghost magnet" href="https://www.linkedin.com/in/dyuliano/" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
           LinkedIn
+        </a>
+        <a class="btn ghost magnet" href="assets/Dyuliano-Cecilio-Curriculo.pdf" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+          Baixar currículo
         </a>
       </div>
     </div>
@@ -573,6 +597,24 @@ section{position:relative;padding:clamp(96px,14vw,180px) 0}
   </div>
 </section>
 
+<!-- PROJECTS -->
+<section id="projetos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Projetos de destaque</h2>
+      <p>Entregas que mudaram a forma como as empresas operam, conduzidas com equipe interna e integradas ao ERP.</p>
+    </div>
+    <div class="proj-list">
+      <article class="prj reveal"><div class="when">2020–2021<small>BMB Mode Center</small></div><h3>ROTA: produção em tempo real</h3><p>Plataforma de monitoramento sincronizada com o ERP, mostrando toda a trajetória de produção do veículo, do pedido de venda ao faturamento.</p></article>
+      <article class="prj reveal"><div class="when">2020–2021<small>BMB Mode Center</small></div><h3>Planejamento e controle orçamentário</h3><p>Implantação do PCO com orçado e realizado por centro de custo em dashboard dinâmico. Os dados passaram a alimentar modelos de machine learning para prever orçamentos e investimentos.</p></article>
+      <article class="prj reveal"><div class="when">2020–2021<small>BMB Mode Center</small></div><h3>Controle de alçada em compras</h3><p>Hierarquia de aprovação por faixa de valor e por orçamento em todo o processo de compras e suprimentos.</p></article>
+      <article class="prj reveal"><div class="when">2019–2020<small>BMB Mode Center</small></div><h3>Estoque, custos e PCP</h3><p>Reformulação do controle de estoque com lote e endereçamento, e migração da gestão de projetos para o PCP com o menor impacto possível na operação.</p></article>
+      <article class="prj reveal"><div class="when">2016–2018<small>Fundação CSN</small></div><h3>Implantações e novos sistemas</h3><p>TOTVS RM Educacional, folha de pagamento ADP, ponto eletrônico e o sistema de admissão do Projeto Capacita, da inscrição à classificação.</p></article>
+      <article class="prj reveal"><div class="when">2013–2018<small>Várias empresas</small></div><h3>Migrações de plataforma</h3><p>Mais de dez migrações de release ao longo da carreira, entre elas Protheus 10 para 11 e 11 para 12, e SQL Server 2000 para 2016.</p></article>
+    </div>
+  </div>
+</section>
+
 <!-- AI -->
 <section class="ai" id="ia">
   <div class="wrap grid">
@@ -651,6 +693,7 @@ section{position:relative;padding:clamp(96px,14vw,180px) 0}
       <a href="https://www.linkedin.com/in/dyuliano/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/dyuliano" target="_blank" rel="noopener">GitHub</a>
       <a href="https://huggingface.co/dyulianocecilio" target="_blank" rel="noopener">Hugging Face</a>
+      <a href="assets/Dyuliano-Cecilio-Curriculo.pdf" download>Currículo em PDF</a>
     </nav>
   </div>
   <div class="wrap foot-base"><span>© <span id="yr">2026</span> Dyuliano Cecilio de Souza</span><a href="#inicio">Voltar ao topo</a></div>
