@@ -178,6 +178,8 @@ PAIRS = [
     ('<h2>Projetos de destaque</h2>', '<h2>Selected projects</h2>'),
     ('Entregas que mudaram a forma como as empresas operam, conduzidas com equipe interna e integradas ao ERP.',
      'Deliveries that changed how companies operate, led with in-house teams and integrated with the ERP.'),
+    ('<h3>Monte Sua Solução: configurador de caminhões</h3><p>Configurador online em que o cliente monta o próprio caminhão escolhendo segmento, modelo e componentes. Integrado diretamente ao TOTVS Protheus: respeita as regras de estrutura de produto da tabela SG1 e entra no módulo de vendas como pedido de cotação. <a href="https://www.modecenter.com.br/solucao" target="_blank" rel="noopener">Ver no site da BMB</a></p>',
+     '<h3>Monte Sua Solução: truck configurator</h3><p>Online configurator where customers build their own truck by choosing segment, model and components. Integrated directly with TOTVS Protheus: it enforces the bill-of-materials rules in the SG1 table and lands in the sales module as a quotation request. <a href="https://www.modecenter.com.br/solucao" target="_blank" rel="noopener">View on BMB\'s website</a></p>'),
     ('<h3>ROTA: produção em tempo real</h3><p>Plataforma de monitoramento sincronizada com o ERP, mostrando toda a trajetória de produção do veículo, do pedido de venda ao faturamento.</p>',
      '<h3>ROTA: real-time production</h3><p>Monitoring platform synchronized with the ERP, tracking each vehicle\'s full production path, from sales order to invoicing.</p>'),
     ('<h3>Planejamento e controle orçamentário</h3><p>Implantação do PCO com orçado e realizado por centro de custo em dashboard dinâmico. Os dados passaram a alimentar modelos de machine learning para prever orçamentos e investimentos.</p>',

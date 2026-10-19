@@ -298,6 +298,8 @@ section{position:relative;padding:clamp(96px,14vw,180px) 0}
 .prj .when small{display:block;font-family:var(--sans);font-size:13.5px;color:var(--muted);margin-top:4px;white-space:normal}
 .prj h3{font-family:var(--serif);font-weight:500;font-size:clamp(22px,2.3vw,30px);line-height:1.15;letter-spacing:-.01em;margin:0;transition:color .4s,transform .6s var(--ease)}
 .prj p{margin:0;color:var(--muted)}
+.prj p a{color:var(--brass);text-underline-offset:4px;text-decoration-thickness:1px}
+.prj p a:hover{color:var(--brass-hi)}
 .prj:hover h3{color:var(--brass-hi);transform:translateX(8px)}
 @media (max-width:860px){.prj{grid-template-columns:1fr;gap:8px}.prj .when small{display:inline;margin-left:10px}}
 
@@ -605,6 +607,7 @@ section{position:relative;padding:clamp(96px,14vw,180px) 0}
       <p>Entregas que mudaram a forma como as empresas operam, conduzidas com equipe interna e integradas ao ERP.</p>
     </div>
     <div class="proj-list">
+      <article class="prj reveal"><div class="when">2019–2021<small>BMB Mode Center</small></div><h3>Monte Sua Solução: configurador de caminhões</h3><p>Configurador online em que o cliente monta o próprio caminhão escolhendo segmento, modelo e componentes. Integrado diretamente ao TOTVS Protheus: respeita as regras de estrutura de produto da tabela SG1 e entra no módulo de vendas como pedido de cotação. <a href="https://www.modecenter.com.br/solucao" target="_blank" rel="noopener">Ver no site da BMB</a></p></article>
       <article class="prj reveal"><div class="when">2020–2021<small>BMB Mode Center</small></div><h3>ROTA: produção em tempo real</h3><p>Plataforma de monitoramento sincronizada com o ERP, mostrando toda a trajetória de produção do veículo, do pedido de venda ao faturamento.</p></article>
       <article class="prj reveal"><div class="when">2020–2021<small>BMB Mode Center</small></div><h3>Planejamento e controle orçamentário</h3><p>Implantação do PCO com orçado e realizado por centro de custo em dashboard dinâmico. Os dados passaram a alimentar modelos de machine learning para prever orçamentos e investimentos.</p></article>
       <article class="prj reveal"><div class="when">2020–2021<small>BMB Mode Center</small></div><h3>Controle de alçada em compras</h3><p>Hierarquia de aprovação por faixa de valor e por orçamento em todo o processo de compras e suprimentos.</p></article>
