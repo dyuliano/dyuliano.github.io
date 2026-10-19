@@ -27,7 +27,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Dyuliano Cecilio de Souza","jobTitle":"Coordenador de Cloud","worksFor":{"@type":"Organization","name":"TOTVS"},"address":{"@type":"PostalAddress","addressCountry":"BR"},"url":"https://dyuliano.github.io/","sameAs":["https://www.linkedin.com/in/dyuliano/","https://github.com/dyuliano","https://huggingface.co/dyulianocecilio"]}
 </script>
-<noscript><style>#intro{display:none}body.loading{overflow:auto}.reveal,.fade{opacity:1!important;transform:none!important}.hero h1 .ch{transform:none}.portrait .frame{clip-path:none!important}.manifesto .w{color:var(--text)}</style></noscript>
+<noscript><style>#intro{display:none}body.loading{overflow:auto}.reveal,.fade{opacity:1!important;transform:none!important}.hero h1 .ch{transform:none}.portrait .frame{clip-path:none!important}.portrait .ring{opacity:1;transform:translate(18px,18px)}.manifesto .w{color:var(--text)}</style></noscript>
 <style>
 :root{
   --ink:#0B1622;
@@ -123,14 +123,13 @@ nav.top.open .menu-btn i:nth-child(2){top:21.5px;transform:rotate(-45deg)}
 .btn svg{width:16px;height:16px}
 
 .portrait{position:relative;justify-self:center;width:min(100%,320px);aspect-ratio:4/5}
-.portrait .frame{position:absolute;inset:0;border-radius:160px 160px 18px 18px;overflow:hidden;clip-path:inset(100% 0 0 0 round 160px 160px 18px 18px);transition:clip-path 1.4s var(--ease) .35s;background:#000}
-.ready .portrait .frame{clip-path:inset(0 0 0 0 round 160px 160px 18px 18px)}
+.portrait .frame{position:absolute;inset:0;z-index:1;border-radius:22px;overflow:hidden;clip-path:inset(100% 0 0 0 round 22px);transition:clip-path 1.4s var(--ease) .35s;background:#000;box-shadow:0 40px 80px -30px rgba(0,0,0,.75)}
+.ready .portrait .frame{clip-path:inset(0 0 0 0 round 22px)}
 .portrait img{width:100%;height:100%;object-fit:cover;object-position:46% 30%;filter:saturate(.8) contrast(1.04);transform:scale(1.15);transition:transform 2.2s var(--ease) .35s}
 .ready .portrait img{transform:scale(1.02)}
-.portrait .ring{position:absolute;inset:-14px;border:1px solid var(--line);border-radius:174px 174px 28px 28px;pointer-events:none}
-.portrait .ring::after{content:"";position:absolute;top:-4px;left:50%;width:7px;height:7px;border-radius:50%;background:var(--brass);box-shadow:0 0 18px var(--brass);offset-path:inset(0 round 174px 174px 28px 28px);animation:orbit 14s linear infinite}
-@keyframes orbit{to{offset-distance:100%}}
-.portrait .tag{position:absolute;left:-28px;bottom:42px;background:rgba(16,34,49,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:14px;padding:14px 18px;font-size:14px;line-height:1.35;max-width:220px}
+.portrait .ring{position:absolute;inset:0;border:1px solid rgba(201,163,91,.45);border-radius:22px;pointer-events:none;transform:translate(0,0);opacity:0;transition:transform 1.4s var(--ease) .9s,opacity 1s .9s}
+.ready .portrait .ring{transform:translate(18px,18px);opacity:1}
+.portrait .tag{position:absolute;z-index:2;left:-28px;bottom:42px;background:rgba(16,34,49,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:14px;padding:14px 18px;font-size:14px;line-height:1.35;max-width:220px}
 .portrait .tag b{display:block;font-family:var(--serif);font-weight:500;font-size:26px;color:var(--brass);line-height:1.1}
 .scroll-cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);width:22px;height:36px;border:1px solid var(--line);border-radius:12px}
 .scroll-cue::after{content:"";position:absolute;left:50%;top:7px;width:2px;height:7px;margin-left:-1px;background:var(--brass);border-radius:2px;animation:cue 2s var(--ease) infinite}
@@ -139,8 +138,9 @@ nav.top.open .menu-btn i:nth-child(2){top:21.5px;transform:rotate(-45deg)}
 @media (max-width:860px){
   .hero{align-items:flex-start}
   .hero .wrap{grid-template-columns:1fr;padding-top:96px}
-  .portrait{order:-1;width:min(62vw,260px);margin-bottom:8px;justify-self:start}
+  .portrait{order:-1;width:min(62vw,260px);margin-bottom:36px;justify-self:start}
   .portrait .tag{left:auto;right:-20px;bottom:-22px;padding:10px 14px;font-size:13px}
+  .ready .portrait .ring{transform:translate(12px,12px)}
   .portrait .tag b{font-size:21px}
   .hero h1 .ln:last-child{padding-left:.3em}
   .scroll-cue{display:none}
