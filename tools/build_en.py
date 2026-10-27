@@ -226,7 +226,7 @@ PAIRS = [
     ('<h3>Engenharia</h3><p>C#, Node.js, TypeScript, React, React Native, Flutter, SQL Server, Docker, Kubernetes, BI e TOTVS Fluig.</p>',
      '<h3>Engineering</h3><p>C#, Node.js, TypeScript, React, React Native, Flutter, SQL Server, Docker, Kubernetes, BI and TOTVS Fluig.</p>'),
     ('<h3>Formação</h3>', '<h3>Education</h3>'),
-    ('<dt>MBA em Inteligência Artificial Aplicada a Negócios</dt>', '<dt>MBA, Artificial Intelligence Applied to Business</dt>'),
+    ('<dt>MBA Executivo em Inteligência Artificial Aplicada a Negócios</dt>', '<dt>Executive MBA, Artificial Intelligence Applied to Business</dt>'),
     ('<dt>Pós-graduação em Engenharia de Software</dt>', '<dt>Postgraduate degree, Software Engineering</dt>'),
     ('<dt>Extensão em Business Intelligence</dt>', '<dt>Extension program, Business Intelligence</dt>'),
     ('<dt>Extensão em BI e Data Science</dt>', '<dt>Extension program, BI and Data Science</dt>'),
