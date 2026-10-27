@@ -1,0 +1,140 @@
+/* Tema Neo brutalista: linguagem do Pulse (tinta, bordas 2px, sombra sólida deslocada) */
+:root{
+  --font-display:"Epilogue","Plus Jakarta Sans",system-ui,sans-serif;
+  --font-body:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --display-weight:900;
+  --display-tracking:-.035em;
+
+  --bg:#FAF9F4;
+  --surface:#FFFFFF;
+  --surface-2:#FAF9F4;
+  --surface-alt:#FFFFFF;
+  --hero-bg:#FAF9F4;
+  --ink:#1A1A1A;
+  --ink-2:#2E2F2A;
+  --muted:#4F5049;
+  --muted-2:#8C8C84;
+  --accent:#1F5FE8;
+  --accent-text:#1F5FE8;
+  --accent-border:#1A1A1A;
+  --on-accent:#FFFFFF;
+  --link:#1A1A1A;
+  --link-hover:#1F5FE8;
+  --focus:#1F5FE8;
+  --live:#0E9F6E;
+  --live-halo:rgba(14,159,110,.2);
+  --hover-bg:#FDD828;
+  --track:#FFFFFF;
+  --track-border:2px solid #1A1A1A;
+
+  --radius:12px;
+  --radius-sm:8px;
+  --radius-xs:6px;
+  --radius-pill:999px;
+  --hair:2px solid #1A1A1A;
+  --card-border:2px solid #1A1A1A;
+  --shadow:5px 5px 0 0 #1A1A1A;
+  --shadow-sm:3px 3px 0 0 #1A1A1A;
+  --section-border:2px solid #1A1A1A;
+  --grid-gap:18px;
+
+  --nav-bg:#FAF9F4;
+  --nav-border:2px solid #1A1A1A;
+  --mark-bg:#FDD828;
+  --mark-ink:#1A1A1A;
+  --mark-border:2px solid #1A1A1A;
+  --chip-border:2px solid #1A1A1A;
+  --menu-active-bg:#1A1A1A;
+  --menu-active-ink:#FAF9F4;
+
+  --btn-border:2px solid #1A1A1A;
+  --btn-primary-bg:#1F5FE8;
+  --btn-primary-hover:#1A52CC;
+  --btn-primary-ink:#FFFFFF;
+  --btn-shadow:4px 4px 0 0 #1A1A1A;
+  --btn-shadow-ghost:4px 4px 0 0 #1A1A1A;
+  --press:translate(3px,3px);
+
+  --avatar-border:2px solid #1A1A1A;
+  --avatar-shadow:4px 4px 0 0 #1A1A1A;
+
+  --kicker-ink:#1A1A1A;
+  --kicker-bg:#FDD828;
+  --kicker-border:2px solid #1A1A1A;
+  --tag-bg:#FFFFFF;
+  --tag-ink:#1A1A1A;
+  --tag-border:1.5px solid #1A1A1A;
+
+  --kpi-bg:#FAF9F4;
+  --kpi-ink:#1A1A1A;
+  --kpi-muted:#4F5049;
+  --kpi-accent:#1F5FE8;
+  --kpi-card-bg:#FFFFFF;
+  --kpi-card-border:2px solid #1A1A1A;
+  --kpi-radius:12px;
+  --kpi-shadow:5px 5px 0 0 #1A1A1A;
+  --kpi-divider:2px solid #1A1A1A;
+  --kpi-gap:18px;
+  --kpi-pad:40px;
+
+  --dot-base:#1A1A1A;
+  --dot-new:#1F5FE8;
+  --dot-empty:rgba(26,26,26,.08);
+  --team:#FDD828;
+  --team-ink:#1A1A1A;
+  --ratio-bg:#FDD828;
+  --ratio-ink:#1A1A1A;
+  --ratio-border:2px solid #1A1A1A;
+
+  --ic-bg:#FDD828;
+  --ic-ink:#1A1A1A;
+  --ic-border:2px solid #1A1A1A;
+
+  --rail-w:4px;
+  --rail-bg:#1A1A1A;
+  --pin:#1A1A1A;
+  --bullet-radius:0;
+
+  --table-top:2px solid #1A1A1A;
+  --table-bg:#FFFFFF;
+  --table-radius:12px;
+  --table-side:2px solid #1A1A1A;
+  --table-shadow:5px 5px 0 0 #1A1A1A;
+  --hl-border:2px solid #1A1A1A;
+
+  --term-border:2px solid #1A1A1A;
+  --term-shadow:6px 6px 0 0 #1A1A1A;
+
+  --foot-bg:#1A1A1A;
+  --foot-ink:#FAF9F4;
+  --foot-muted:#C9C8BF;
+  --foot-line:#3A3B35;
+
+  --intro-bg:#FDD828;
+  --intro-ink:#1A1A1A;
+  --intro-track:#FFFFFF;
+  --intro-fill:#1A1A1A;
+}
+/* toques próprios do Neo */
+.kpi + .kpi{border-left:var(--kpi-card-border)}
+.kpi:nth-child(4){background:#1F5FE8;color:#FFFFFF}
+.kpi:nth-child(4) p,.kpi:nth-child(4) .n small{color:#FFFFFF}
+.ratio{box-shadow:3px 3px 0 0 #1A1A1A}
+.deg.hl{background:#FDD828}
+.deg.hl .inst,.deg.hl .when{color:#1A1A1A}
+.prod:nth-child(1){background:#FDD828}
+.prod:nth-child(1) .badge{background:#FFFFFF}
+.hero h1 span:last-child{background:#1F5FE8;color:#FFFFFF;padding:0 .16em .06em;border:2px solid #1A1A1A;border-radius:12px;box-shadow:6px 6px 0 0 #1A1A1A;margin-top:.08em}
+.menu a:hover{color:#1A1A1A}
+.btn:hover{box-shadow:2px 2px 0 0 #1A1A1A;transform:translate(2px,2px)}
+.links a:hover{background:#FDD828}
+.cos{background:#1A1A1A}
+.cos li{color:#FAF9F4}
+.cos li:nth-child(odd){color:#FDD828}
+.kpis{border-bottom:var(--section-border)}
+@media (max-width:900px){.kpi:nth-child(3){border-left:var(--kpi-card-border)}}
+@media (max-width:380px){.kpi + .kpi{border-left:var(--kpi-card-border)}}
+.job .pin{width:20px;height:20px;border:3px solid #1A1A1A;background:#FFFFFF;margin-left:-2px;margin-top:-2px}
+.job.in .pin{background:#FDD828}
+.job.now .pin{background:#1F5FE8;border-color:#1A1A1A;box-shadow:3px 3px 0 0 #1A1A1A}

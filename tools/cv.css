@@ -2,7 +2,7 @@
 :root{--ink:#0B1622;--muted:#55636f;--brass:#9a7531;--line:#e3dccd;--soft:#f6f2ea}
 *{box-sizing:border-box}
 html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-body{margin:0;font-family:"Hanken Grotesk",system-ui,sans-serif;font-size:9.6pt;line-height:1.45;color:var(--ink)}
+body{margin:0;font-family:"Hanken Grotesk",system-ui,sans-serif;font-size:9.3pt;line-height:1.42;color:var(--ink)}
 h1,h2,h3{font-family:"Newsreader",Georgia,serif;font-weight:500;margin:0}
 a{color:inherit;text-decoration:none}
 header{display:grid;grid-template-columns:1fr auto;gap:6mm;align-items:end;padding-bottom:4mm;border-bottom:1.2pt solid var(--brass)}
@@ -21,17 +21,20 @@ p{margin:0 0 2mm}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:2.2mm 6mm}
 .skill b{display:block;font-weight:600;font-size:9.4pt}
 .skill span{color:var(--muted);font-size:8.8pt}
-.job{margin-bottom:3.4mm;break-inside:avoid}
+.job{margin-bottom:3.4mm}
+.job-h,.org{break-after:avoid}
 .job-h{display:grid;grid-template-columns:1fr auto;gap:4mm;align-items:baseline}
 .job h3{font-size:11.5pt}
 .when{font-size:8.6pt;color:var(--brass);font-weight:600;white-space:nowrap}
 .org{font-size:8.8pt;color:var(--muted);margin:.3mm 0 1.2mm}
 ul{margin:0;padding-left:4mm}
-li{margin:0 0 .9mm}
+li{margin:0 0 .6mm}
 li b{font-weight:600}
 .ladder{font-size:8.6pt;color:var(--muted);margin:0 0 1.2mm}
 .ladder b{color:var(--ink)}
 .edu{display:grid;grid-template-columns:1fr 1fr;gap:1.4mm 6mm;font-size:9pt}
-.edu div{display:flex;justify-content:space-between;gap:3mm;border-bottom:.5pt solid var(--line);padding-bottom:1mm}
+.edu .col{display:grid;gap:1.2mm;align-content:start}
+.edu .col div{display:flex;justify-content:space-between;gap:3mm;border-bottom:.5pt solid var(--line);padding-bottom:.8mm}
+.edu .col h4{margin:0 0 .4mm;font-size:8.4pt;color:var(--brass);font-weight:700}
 .edu span{color:var(--muted);white-space:nowrap}
 .page2{break-before:page}
