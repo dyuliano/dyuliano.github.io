@@ -140,3 +140,6 @@
 .job.now .pin{background:#1F5FE8;border-color:#1A1A1A;box-shadow:3px 3px 0 0 #1A1A1A}
 :root{--hl:#FDD828;--lift:translate(-2px,-2px);--shadow-lift:7px 7px 0 0 #1A1A1A;--row-hover:#FFF6C2}
 .fab{border:2px solid #1A1A1A}
+:root{--flag-bg:#1F5FE8;--flag-ink:#FFFFFF;--flag-muted:#E3EAFF;--flag-border:2px solid #1A1A1A;--flag-shadow:7px 7px 0 0 #1A1A1A;--flag-badge-bg:#FDD828;--flag-badge-ink:#1A1A1A;--flag-badge-border:2px solid #1A1A1A;--flag-chip-border:1.5px solid #FFFFFF;--flag-tile:#FFFFFF;--flag-tile-ink:#1A1A1A;--flag-tile-muted:#4F5049;--flag-tile-border:2px solid #1A1A1A}
+.flag-mods li{box-shadow:3px 3px 0 0 #1A1A1A}
+.pg-dot{background:#FDD828;border:2px solid #1A1A1A;box-shadow:none}

@@ -41,6 +41,7 @@ Cloud operation for the TOTVS Fluig and TOTVS Agro product lines, reporting to C
 - Critical environments consistently meeting SLA and MTTR targets, backed by risk management and prevention.
 - Hands-on churn reduction: dissatisfaction analysis, win-back plans and dedicated service for strategic accounts.
 - Built the Cloud offering for the TOTVS Agro ERP, on-premises to Cloud and cross-edge migrations, and moved PaaS to Docker and Kubernetes.
+- Designed and built SinergIA: a team management platform covering time, projects, OKRs, people and AI.
 - Crisis management with root cause analysis and recurrence prevention, together with Governance and Information Security.
 
 ### Technology and Development Coordinator | Cinbal, Incoflandres Group · the Americas' largest flat-steel lithography and processing company
@@ -62,7 +63,7 @@ From specialist to manager in under 18 months, reporting directly to the board w
 
 - Roadmap and budget for technology and innovation; managed with OKRs, Scrum and Kanban.
 - ERP migration and infrastructure overhaul delivered by the in-house team, with no outside consultancy.
-- Monte Sua Solução: a truck configurator integrated with Protheus, and ROTA: a portal for customers to track their order from request to invoicing.
+- Monte Sua Solução (a truck configurator integrated with Protheus), ROTA (a customer portal from order to invoicing) and Hello (an intranet with KPIs and approval workflows).
 - Web and mobile platform for production, billing and expense KPIs integrated with the ERP, with dashboards for the board.
 
 ### Senior Systems Analyst | Fundação CSN
@@ -94,12 +95,13 @@ First leadership role: responsible for the systems and development area, leading
 
 ## Selected projects
 
-- **Monte Sua Solução** (BMB Mode Center, 2019–2021): Web configurator where customers build their own truck. Integrated with Protheus: it enforces the SG1 bill-of-materials rules and lands in the sales module as a quotation request. (https://www.modecenter.com.br/solucao)
+- **SinergIA** (TOTVS, 2025 – present): A corporate platform we built at TOTVS to connect work management, people, knowledge and artificial intelligence. Identity, teams, permissions, auditing and observability are shared across every module. Execution: OKRs, project management, priorities and dashboards; Time management: Team time and productivity, plus work shifts; People: Teams, career growth, DISC profiles and career books; Experience: Engagement surveys and integrated support; Knowledge: Knowledge base, insights and collaboration; Enterprise AI: MarIA assistant with guardrails, auditing and human approval.
+- **Intranet and production app** (Cinbal, 2021–2022): Corporate intranet and an app for customers to follow their production information.
 - **ROTA** (BMB Mode Center, 2020–2021): Customer portal to track each order in real time, from request through production to invoicing.
 - **Budget planning** (BMB Mode Center, 2020–2021): Budget versus actuals by cost center in a dashboard, with the data feeding machine learning models.
+- **Monte Sua Solução** (BMB Mode Center, 2019–2021): Web configurator where customers build their own truck; it enforces the SG1 bill-of-materials rules and lands in sales as a quotation request. (https://www.modecenter.com.br/solucao)
+- **Hello** (BMB Mode Center, 2019–2021): Intranet integrated with Protheus, with management KPIs and approval workflows.
 - **Procurement, inventory and PP&C** (BMB Mode Center, 2019–2021): Purchase approval by value and budget, lot and location inventory control and a production planning redesign.
-- **Hello** (Corporate intranet): Intranet integrated with Protheus, with management KPIs and approval workflows.
-- **Intranet and production app** (Cinbal, 2021–2022): Corporate intranet and an app for customers to follow production information.
 - **Protheus x RM integrator** (Fundação CSN, 2016–2019): Integration between Protheus and TOTVS RM, synchronizing records and processes across both systems.
 - **Student portal** (Fundação CSN, 2016–2019): Student portal integrated with TOTVS RM Educational.
 - **Supplier Portal** (Fundação CSN, 2016–2019): Supplier portal integrated with Protheus.
@@ -107,11 +109,11 @@ First leadership role: responsible for the systems and development area, leading
 
 ## Own platforms
 
-- **SinergIA** (Work management): Modular corporate platform connecting work management, people, knowledge and AI, with a time and productivity module.
 - **Pulse** (HR SaaS): The whole employee journey in one B2B platform: recruiting, digital onboarding paperwork, ERP and eSocial, onboarding, time tracking, performance, IDP and 9-box.
 - **MarIA** (AI for ERP): Conversational AI for ERPs: natural-language questions about inventory, finance, procurement, billing and HR, with auditable answers.
 - **IA-ERP Inventory** (Protheus + AI): An AI inventory specialist connected to Protheus: checks balances, audits processes and flags fraud in business language.
 - **ADVPL AI** (Hugging Face): The first public AI model specialized in ADVPL and TLPP, trained on more than 150,000 examples and runnable locally.
+- **Nuvii Root** (Infrastructure): Monitoring and administration of servers, databases and services from a single interface.
 - **Executive apps** (App Store and Google Play): Mobile finance and sales dashboards and geolocated time tracking, published on the stores.
 
 ## Education

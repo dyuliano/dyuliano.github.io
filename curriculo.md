@@ -41,6 +41,7 @@ Operação Cloud das linhas TOTVS Fluig e TOTVS Agro, reportando à Gerência de
 - Ambientes críticos com metas de SLA e TMR cumpridas de forma consistente, apoiadas em gestão de risco e prevenção.
 - Atuação direta em redução de churn: análise de insatisfação, planos de reversão e atendimento dedicado a contas estratégicas.
 - Estruturação do Cloud para o ERP TOTVS Agro, migrações on-premises para Cloud e entre edges, e transição do PaaS para Docker e Kubernetes.
+- Concepção e desenvolvimento do SinergIA: plataforma de gestão de equipes com tempo, projetos, OKR, pessoas e IA.
 - Gestão de crise com causa raiz e prevenção de recorrência, junto a Governança e Segurança da Informação.
 
 ### Coordenador de Tecnologia e Desenvolvimento | Cinbal, Grupo Incoflandres · maior empresa de litografia e beneficiamento de aços planos das Américas
@@ -62,7 +63,7 @@ De especialista a gerente em menos de 18 meses, com reporte direto à diretoria 
 
 - Roadmap e orçamento da área de tecnologia e inovação; gestão por OKRs, Scrum e Kanban.
 - Migração do ERP e reestruturação de infraestrutura conduzidas pela equipe interna, sem consultoria externa.
-- Monte Sua Solução: configurador de caminhões integrado ao Protheus, e ROTA: portal para o cliente acompanhar o pedido da solicitação ao faturamento.
+- Monte Sua Solução (configurador de caminhões integrado ao Protheus), ROTA (portal do cliente, do pedido ao faturamento) e Hello (intranet com KPIs e workflow de aprovações).
 - Plataforma web e mobile de indicadores de produção, faturamento e despesas integrada ao ERP, com dashboards para a diretoria.
 
 ### Analista de Sistemas Sênior | Fundação CSN
@@ -94,12 +95,13 @@ Primeira posição de liderança: responsável pela área de sistemas e desenvol
 
 ## Projetos de destaque
 
-- **Monte Sua Solução** (BMB Mode Center, 2019–2021): Configurador web em que o cliente monta o próprio caminhão. Integrado ao Protheus: respeita as regras de estrutura da SG1 e entra no módulo de vendas como pedido de cotação. (https://www.modecenter.com.br/solucao)
+- **SinergIA** (TOTVS, 2025 – hoje): Plataforma corporativa que desenvolvemos na TOTVS para conectar gestão do trabalho, pessoas, conhecimento e inteligência artificial. Identidade, times, permissões, auditoria e observabilidade são compartilhados por todos os módulos. Execução: OKR, gestão de projetos, prioridades e dashboards; Gestão de tempo: Tempo e produtividade das equipes e escalas de trabalho; Pessoas: Times, evolução profissional, perfil DISC e book de carreira; Experiência: Pesquisas de clima e atendimento integrado; Conhecimento: Base de conhecimento, insights e colaboração; IA corporativa: Assistente MarIA com guardrails, auditoria e aprovação humana.
+- **Intranet e app de produção** (Cinbal, 2021–2022): Intranet corporativa e aplicativo para o cliente acompanhar informações da sua produção.
 - **ROTA** (BMB Mode Center, 2020–2021): Portal do cliente para acompanhar o pedido em tempo real, da solicitação à produção e ao faturamento.
 - **Planejamento orçamentário** (BMB Mode Center, 2020–2021): Orçado e realizado por centro de custo em dashboard, com dados alimentando modelos de machine learning.
+- **Monte Sua Solução** (BMB Mode Center, 2019–2021): Configurador web em que o cliente monta o próprio caminhão; respeita as regras de estrutura da SG1 e entra nas vendas como pedido de cotação. (https://www.modecenter.com.br/solucao)
+- **Hello** (BMB Mode Center, 2019–2021): Intranet integrada ao Protheus, com indicadores de gestão (KPIs) e workflow de aprovações.
 - **Compras, estoque e PCP** (BMB Mode Center, 2019–2021): Controle de alçada por valor e orçamento, estoque com lote e endereçamento e reformulação do PCP.
-- **Hello** (Intranet corporativa): Intranet integrada ao Protheus, com indicadores de gestão (KPIs) e workflow de aprovações.
-- **Intranet e app de produção** (Cinbal, 2021–2022): Intranet corporativa e aplicativo para o cliente acompanhar informações de produção.
 - **Integrador Protheus x RM** (Fundação CSN, 2016–2019): Integração entre o Protheus e o TOTVS RM, sincronizando cadastros e processos entre os dois sistemas.
 - **Portal do aluno** (Fundação CSN, 2016–2019): Portal do aluno integrado ao TOTVS RM Educacional.
 - **Portal do Fornecedor** (Fundação CSN, 2016–2019): Portal do Fornecedor integrado ao Protheus.
@@ -107,11 +109,11 @@ Primeira posição de liderança: responsável pela área de sistemas e desenvol
 
 ## Plataformas próprias
 
-- **SinergIA** (Gestão do trabalho): Plataforma corporativa modular que conecta gestão do trabalho, pessoas, conhecimento e IA, com módulo de tempo e produtividade.
 - **Pulse** (SaaS de RH): Jornada do colaborador em uma plataforma B2B: recrutamento, admissão digital, ERP e eSocial, onboarding, ponto, performance, PDI e 9Box.
 - **MarIA** (IA para ERP): IA conversacional para ERPs: perguntas em linguagem natural sobre estoque, financeiro, compras, faturamento e RH, com respostas auditáveis.
 - **IA-ERP Estoque** (Protheus + IA): Especialista de estoque com IA conectado ao Protheus: confere saldos, audita processos e aponta fraudes em linguagem de negócio.
 - **ADVPL AI** (Hugging Face): Primeiro modelo público de IA especializado em ADVPL e TLPP, treinado com mais de 150 mil exemplos e executável localmente.
+- **Nuvii Root** (Infraestrutura): Monitoramento e administração de servidores, bancos de dados e serviços em uma interface única.
 - **Apps executivos** (App Store e Google Play): Dashboards móveis de financeiro e vendas e registro de ponto por geolocalização, publicados nas lojas.
 
 ## Formação acadêmica

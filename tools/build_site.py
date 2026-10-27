@@ -99,6 +99,7 @@ T = {
                'Ambientes críticos com <b>metas de SLA e TMR cumpridas</b> de forma consistente, apoiadas em gestão de risco e prevenção.',
                'Atuação direta em <b>redução de churn</b>: análise de insatisfação, planos de reversão e atendimento dedicado a contas estratégicas.',
                'Estruturação do Cloud para o ERP TOTVS Agro, migrações on-premises para Cloud e entre edges, e transição do PaaS para <b>Docker e Kubernetes</b>.',
+               'Concepção e desenvolvimento do <b>SinergIA</b>: plataforma de gestão de equipes com tempo, projetos, OKR, pessoas e IA.',
                'Gestão de crise com causa raiz e prevenção de recorrência, junto a Governança e Segurança da Informação.']},
         {'y': '2021', 'to': 'a 2022', 'org': 'Cinbal, Grupo Incoflandres · maior empresa de litografia e beneficiamento de aços planos das Américas', 'role': 'Coordenador de Tecnologia e Desenvolvimento',
          'ctx': 'Área de Tecnologia e Desenvolvimento, reportando à Gerência Executiva.',
@@ -111,7 +112,7 @@ T = {
          'ctx': 'De especialista a gerente em menos de 18 meses, com reporte direto à diretoria e atuação simultânea na frente de produtos digitais.',
          'b': ['<b>Roadmap e orçamento</b> da área de tecnologia e inovação; gestão por OKRs, Scrum e Kanban.',
                'Migração do ERP e reestruturação de infraestrutura <b>conduzidas pela equipe interna</b>, sem consultoria externa.',
-               '<b>Monte Sua Solução</b>: configurador de caminhões integrado ao Protheus, e <b>ROTA</b>: portal para o cliente acompanhar o pedido da solicitação ao faturamento.',
+               '<b>Monte Sua Solução</b> (configurador de caminhões integrado ao Protheus), <b>ROTA</b> (portal do cliente, do pedido ao faturamento) e <b>Hello</b> (intranet com KPIs e workflow de aprovações).',
                'Plataforma web e mobile de <b>indicadores de produção, faturamento e despesas</b> integrada ao ERP, com dashboards para a diretoria.']},
         {'y': '2016', 'to': 'a 2019', 'org': 'Fundação CSN', 'role': 'Analista de Sistemas Sênior',
          'ctx': 'Primeira posição de liderança: responsável pela área de sistemas e desenvolvimento, com condução técnica do time e priorização das demandas.',
@@ -130,27 +131,38 @@ T = {
     ],
     # projetos
     'p_kicker': 'Projetos', 'p_h': 'Entregas de destaque',
-    'p_p': 'Sistemas que mudaram a forma como as empresas operam, sempre integrados ao ERP e construídos com equipe interna.',
-    'projects': [
-        ('BMB Mode Center', '2019–2021', 'Monte Sua Solução', 'Configurador web em que o cliente monta o próprio caminhão. Integrado ao Protheus: respeita as regras de estrutura da SG1 e entra no módulo de vendas como pedido de cotação.', ('https://www.modecenter.com.br/solucao', 'Ver ao vivo')),
-        ('BMB Mode Center', '2020–2021', 'ROTA', 'Portal do cliente para acompanhar o pedido em tempo real, da solicitação à produção e ao faturamento.', None),
-        ('BMB Mode Center', '2020–2021', 'Planejamento orçamentário', 'Orçado e realizado por centro de custo em dashboard, com dados alimentando modelos de machine learning.', None),
-        ('BMB Mode Center', '2019–2021', 'Compras, estoque e PCP', 'Controle de alçada por valor e orçamento, estoque com lote e endereçamento e reformulação do PCP.', None),
-        ('Intranet corporativa', '', 'Hello', 'Intranet integrada ao Protheus, com indicadores de gestão (KPIs) e workflow de aprovações.', None),
-        ('Cinbal', '2021–2022', 'Intranet e app de produção', 'Intranet corporativa e aplicativo para o cliente acompanhar informações de produção.', None),
-        ('Fundação CSN', '2016–2019', 'Integrador Protheus x RM', 'Integração entre o Protheus e o TOTVS RM, sincronizando cadastros e processos entre os dois sistemas.', None),
-        ('Fundação CSN', '2016–2019', 'Portal do aluno', 'Portal do aluno integrado ao TOTVS RM Educacional.', None),
-        ('Fundação CSN', '2016–2019', 'Portal do Fornecedor', 'Portal do Fornecedor integrado ao Protheus.', None),
-        ('Várias empresas', '2013–2018', 'Migrações de plataforma', 'Mais de dez migrações de release, entre elas Protheus 10 para 11 e 11 para 12, e SQL Server 2000 para 2016.', None),
+    'p_p': 'Da plataforma que desenvolvemos hoje na TOTVS aos sistemas que mudaram a operação da indústria e do setor automotivo, do mais recente ao mais antigo.',
+    'flag': {
+        'co': 'TOTVS', 'when': '2025 – hoje', 'name': 'SinergIA', 'badge': 'Entrega principal',
+        'lead': 'Plataforma corporativa que desenvolvemos na TOTVS para conectar gestão do trabalho, pessoas, conhecimento e inteligência artificial. Identidade, times, permissões, auditoria e observabilidade são compartilhados por todos os módulos.',
+        'mods': [('Execução', 'OKR, gestão de projetos, prioridades e dashboards'), ('Gestão de tempo', 'Tempo e produtividade das equipes e escalas de trabalho'), ('Pessoas', 'Times, evolução profissional, perfil DISC e book de carreira'), ('Experiência', 'Pesquisas de clima e atendimento integrado'), ('Conhecimento', 'Base de conhecimento, insights e colaboração'), ('IA corporativa', 'Assistente MarIA com guardrails, auditoria e aprovação humana')],
+        'stack': ['Next.js', 'React', 'TypeScript', 'Prisma', 'Redis', 'Docker'],
+    },
+    'pgroups': [
+        ('Cinbal', '2021 – 2022', [
+            ('2021–2022', 'Intranet e app de produção', 'Intranet corporativa e aplicativo para o cliente acompanhar informações da sua produção.', ['Intranet', 'App', 'Produção'], None)]),
+        ('BMB Mode Center', '2019 – 2021', [
+            ('2020–2021', 'ROTA', 'Portal do cliente para acompanhar o pedido em tempo real, da solicitação à produção e ao faturamento.', ['Portal do cliente', 'Tempo real', 'ERP'], None),
+            ('2020–2021', 'Planejamento orçamentário', 'Orçado e realizado por centro de custo em dashboard, com dados alimentando modelos de machine learning.', ['PCO', 'Dashboards', 'Machine learning'], None),
+            ('2019–2021', 'Monte Sua Solução', 'Configurador web em que o cliente monta o próprio caminhão; respeita as regras de estrutura da SG1 e entra nas vendas como pedido de cotação.', ['Protheus', 'Vendas', 'Web'], ('https://www.modecenter.com.br/solucao', 'Ver ao vivo')),
+            ('2019–2021', 'Hello', 'Intranet integrada ao Protheus, com indicadores de gestão (KPIs) e workflow de aprovações.', ['Intranet', 'KPIs', 'Workflow'], None),
+            ('2019–2021', 'Compras, estoque e PCP', 'Controle de alçada por valor e orçamento, estoque com lote e endereçamento e reformulação do PCP.', ['Alçadas', 'Estoque', 'PCP'], None)]),
+        ('Fundação CSN', '2016 – 2019', [
+            ('2016–2019', 'Integrador Protheus x RM', 'Integração entre o Protheus e o TOTVS RM, sincronizando cadastros e processos entre os dois sistemas.', ['Protheus', 'TOTVS RM', 'Integração'], None),
+            ('2016–2019', 'Portal do aluno', 'Portal do aluno integrado ao TOTVS RM Educacional.', ['TOTVS RM', 'Portal'], None),
+            ('2016–2019', 'Portal do Fornecedor', 'Portal do Fornecedor integrado ao Protheus.', ['Protheus', 'Portal'], None)]),
+        ('Várias empresas', '2013 – 2018', [
+            ('2013–2018', 'Migrações de plataforma', 'Mais de dez migrações de release, entre elas Protheus 10 para 11 e 11 para 12, e SQL Server 2000 para 2016.', ['Protheus', 'SQL Server'], None)]),
     ],
+    'flag_mods_h': 'Módulos', 'n_deliveries': '{n} entregas', 'n_delivery': '1 entrega',
     'prod_h': 'Plataformas próprias',
     'prod_p': 'Produtos que desenvolvo para o mercado corporativo, com foco em gestão, pessoas e IA aplicada ao ERP.',
     'products': [
-        ('SinergIA', 'Gestão do trabalho', 'Plataforma corporativa modular que conecta gestão do trabalho, pessoas, conhecimento e IA, com módulo de tempo e produtividade.'),
         ('Pulse', 'SaaS de RH', 'Jornada do colaborador em uma plataforma B2B: recrutamento, admissão digital, ERP e eSocial, onboarding, ponto, performance, PDI e 9Box.'),
         ('MarIA', 'IA para ERP', 'IA conversacional para ERPs: perguntas em linguagem natural sobre estoque, financeiro, compras, faturamento e RH, com respostas auditáveis.'),
         ('IA-ERP Estoque', 'Protheus + IA', 'Especialista de estoque com IA conectado ao Protheus: confere saldos, audita processos e aponta fraudes em linguagem de negócio.'),
         ('ADVPL AI', 'Hugging Face', 'Primeiro modelo público de IA especializado em ADVPL e TLPP, treinado com mais de 150 mil exemplos e executável localmente.'),
+        ('Nuvii Root', 'Infraestrutura', 'Monitoramento e administração de servidores, bancos de dados e serviços em uma interface única.'),
         ('Apps executivos', 'App Store e Google Play', 'Dashboards móveis de financeiro e vendas e registro de ponto por geolocalização, publicados nas lojas.'),
     ],
     # IA
@@ -260,6 +272,7 @@ T['en'] = {
                'Critical environments <b>consistently meeting SLA and MTTR targets</b>, backed by risk management and prevention.',
                'Hands-on <b>churn reduction</b>: dissatisfaction analysis, win-back plans and dedicated service for strategic accounts.',
                'Built the Cloud offering for the TOTVS Agro ERP, on-premises to Cloud and cross-edge migrations, and moved PaaS to <b>Docker and Kubernetes</b>.',
+               'Designed and built <b>SinergIA</b>: a team management platform covering time, projects, OKRs, people and AI.',
                'Crisis management with root cause analysis and recurrence prevention, together with Governance and Information Security.']},
         {'y': '2021', 'to': 'to 2022', 'org': 'Cinbal, Incoflandres Group · the Americas\' largest flat-steel lithography and processing company', 'role': 'Technology and Development Coordinator',
          'ctx': 'Technology and Development department, reporting to executive management.',
@@ -272,7 +285,7 @@ T['en'] = {
          'ctx': 'From specialist to manager in under 18 months, reporting directly to the board while also leading the digital products front.',
          'b': ['<b>Roadmap and budget</b> for technology and innovation; managed with OKRs, Scrum and Kanban.',
                'ERP migration and infrastructure overhaul <b>delivered by the in-house team</b>, with no outside consultancy.',
-               '<b>Monte Sua Solução</b>: a truck configurator integrated with Protheus, and <b>ROTA</b>: a portal for customers to track their order from request to invoicing.',
+               '<b>Monte Sua Solução</b> (a truck configurator integrated with Protheus), <b>ROTA</b> (a customer portal from order to invoicing) and <b>Hello</b> (an intranet with KPIs and approval workflows).',
                'Web and mobile platform for <b>production, billing and expense KPIs</b> integrated with the ERP, with dashboards for the board.']},
         {'y': '2016', 'to': 'to 2019', 'org': 'Fundação CSN', 'role': 'Senior Systems Analyst',
          'ctx': 'First leadership role: responsible for the systems and development area, leading the team technically and prioritizing demand.',
@@ -290,27 +303,38 @@ T['en'] = {
                'Technology instructor at Prepara vocational school (2010–2011).']},
     ],
     'p_kicker': 'Projects', 'p_h': 'Selected deliveries',
-    'p_p': 'Systems that changed how companies operate, always integrated with the ERP and built with in-house teams.',
-    'projects': [
-        ('BMB Mode Center', '2019–2021', 'Monte Sua Solução', 'Web configurator where customers build their own truck. Integrated with Protheus: it enforces the SG1 bill-of-materials rules and lands in the sales module as a quotation request.', ('https://www.modecenter.com.br/solucao', 'See it live')),
-        ('BMB Mode Center', '2020–2021', 'ROTA', 'Customer portal to track each order in real time, from request through production to invoicing.', None),
-        ('BMB Mode Center', '2020–2021', 'Budget planning', 'Budget versus actuals by cost center in a dashboard, with the data feeding machine learning models.', None),
-        ('BMB Mode Center', '2019–2021', 'Procurement, inventory and PP&amp;C', 'Purchase approval by value and budget, lot and location inventory control and a production planning redesign.', None),
-        ('Corporate intranet', '', 'Hello', 'Intranet integrated with Protheus, with management KPIs and approval workflows.', None),
-        ('Cinbal', '2021–2022', 'Intranet and production app', 'Corporate intranet and an app for customers to follow production information.', None),
-        ('Fundação CSN', '2016–2019', 'Protheus x RM integrator', 'Integration between Protheus and TOTVS RM, synchronizing records and processes across both systems.', None),
-        ('Fundação CSN', '2016–2019', 'Student portal', 'Student portal integrated with TOTVS RM Educational.', None),
-        ('Fundação CSN', '2016–2019', 'Supplier Portal', 'Supplier portal integrated with Protheus.', None),
-        ('Several companies', '2013–2018', 'Platform migrations', 'More than ten release migrations, including Protheus 10 to 11 and 11 to 12, and SQL Server 2000 to 2016.', None),
+    'p_p': 'From the platform we build today at TOTVS to the systems that changed operations in manufacturing and automotive, from most recent to oldest.',
+    'flag': {
+        'co': 'TOTVS', 'when': '2025 – present', 'name': 'SinergIA', 'badge': 'Flagship delivery',
+        'lead': 'A corporate platform we built at TOTVS to connect work management, people, knowledge and artificial intelligence. Identity, teams, permissions, auditing and observability are shared across every module.',
+        'mods': [('Execution', 'OKRs, project management, priorities and dashboards'), ('Time management', 'Team time and productivity, plus work shifts'), ('People', 'Teams, career growth, DISC profiles and career books'), ('Experience', 'Engagement surveys and integrated support'), ('Knowledge', 'Knowledge base, insights and collaboration'), ('Enterprise AI', 'MarIA assistant with guardrails, auditing and human approval')],
+        'stack': ['Next.js', 'React', 'TypeScript', 'Prisma', 'Redis', 'Docker'],
+    },
+    'pgroups': [
+        ('Cinbal', '2021 – 2022', [
+            ('2021–2022', 'Intranet and production app', 'Corporate intranet and an app for customers to follow their production information.', ['Intranet', 'App', 'Production'], None)]),
+        ('BMB Mode Center', '2019 – 2021', [
+            ('2020–2021', 'ROTA', 'Customer portal to track each order in real time, from request through production to invoicing.', ['Customer portal', 'Real time', 'ERP'], None),
+            ('2020–2021', 'Budget planning', 'Budget versus actuals by cost center in a dashboard, with the data feeding machine learning models.', ['Budgeting', 'Dashboards', 'Machine learning'], None),
+            ('2019–2021', 'Monte Sua Solução', 'Web configurator where customers build their own truck; it enforces the SG1 bill-of-materials rules and lands in sales as a quotation request.', ['Protheus', 'Sales', 'Web'], ('https://www.modecenter.com.br/solucao', 'See it live')),
+            ('2019–2021', 'Hello', 'Intranet integrated with Protheus, with management KPIs and approval workflows.', ['Intranet', 'KPIs', 'Workflow'], None),
+            ('2019–2021', 'Procurement, inventory and PP&amp;C', 'Purchase approval by value and budget, lot and location inventory control and a production planning redesign.', ['Approvals', 'Inventory', 'PP&amp;C'], None)]),
+        ('Fundação CSN', '2016 – 2019', [
+            ('2016–2019', 'Protheus x RM integrator', 'Integration between Protheus and TOTVS RM, synchronizing records and processes across both systems.', ['Protheus', 'TOTVS RM', 'Integration'], None),
+            ('2016–2019', 'Student portal', 'Student portal integrated with TOTVS RM Educational.', ['TOTVS RM', 'Portal'], None),
+            ('2016–2019', 'Supplier Portal', 'Supplier portal integrated with Protheus.', ['Protheus', 'Portal'], None)]),
+        ('Several companies', '2013 – 2018', [
+            ('2013–2018', 'Platform migrations', 'More than ten release migrations, including Protheus 10 to 11 and 11 to 12, and SQL Server 2000 to 2016.', ['Protheus', 'SQL Server'], None)]),
     ],
+    'flag_mods_h': 'Modules', 'n_deliveries': '{n} deliveries', 'n_delivery': '1 delivery',
     'prod_h': 'Own platforms',
     'prod_p': 'Products I build for the corporate market, focused on management, people and AI applied to ERP.',
     'products': [
-        ('SinergIA', 'Work management', 'Modular corporate platform connecting work management, people, knowledge and AI, with a time and productivity module.'),
         ('Pulse', 'HR SaaS', 'The whole employee journey in one B2B platform: recruiting, digital onboarding paperwork, ERP and eSocial, onboarding, time tracking, performance, IDP and 9-box.'),
         ('MarIA', 'AI for ERP', 'Conversational AI for ERPs: natural-language questions about inventory, finance, procurement, billing and HR, with auditable answers.'),
         ('IA-ERP Inventory', 'Protheus + AI', 'An AI inventory specialist connected to Protheus: checks balances, audits processes and flags fraud in business language.'),
         ('ADVPL AI', 'Hugging Face', 'The first public AI model specialized in ADVPL and TLPP, trained on more than 150,000 examples and runnable locally.'),
+        ('Nuvii Root', 'Infrastructure', 'Monitoring and administration of servers, databases and services from a single interface.'),
         ('Executive apps', 'App Store and Google Play', 'Mobile finance and sales dashboards and geolocated time tracking, published on the stores.'),
     ],
     'a_kicker': 'Applied AI', 'a_h': 'AI inside the ERP, not next to it',
@@ -402,12 +426,32 @@ def page(t, theme, root, lang_href, alt_href, canonical):
         jobs.append(f'''      <article class="{cls}"><span class="pin" aria-hidden="true"></span><div class="yr">{j["y"]}<small>{j["to"]}</small></div>
         <div class="org">{j["org"]}</div><h3>{j["role"]}</h3>{ladder}{ctx}<ul>{bullets}</ul></article>''')
     jobs = '\n'.join(jobs)
-    prows = []
-    for co, yrs, name, desc, link in t['projects']:
-        a = f' <a href="{link[0]}" target="_blank" rel="noopener">{link[1]}</a>' if link else ''
-        when = f'<small>{yrs}</small>' if yrs else ''
-        prows.append(f'      <div class="prow"><div class="co">{co}{when}</div><h3>{name}</h3><p>{desc}{a}</p></div>')
-    prows = '\n'.join(prows)
+    f = t['flag']
+    mods = ''.join(f'<li><b>{m}</b><span>{d}</span></li>' for m, d in f['mods'])
+    stack = ''.join(f'<li>{x}</li>' for x in f['stack'])
+    flag = f'''    <article class="flag reveal">
+      <div class="flag-main">
+        <div class="flag-meta"><span class="flag-co">{f["co"]}</span><span class="flag-when">{f["when"]}</span><span class="flag-badge">{f["badge"]}</span></div>
+        <h3>{f["name"]}</h3>
+        <p>{f["lead"]}</p>
+        <ul class="flag-stack" aria-label="Stack">{stack}</ul>
+      </div>
+      <div class="flag-mods"><span class="flag-mods-h">{t["flag_mods_h"]}</span><ul data-stagger>{mods}</ul></div>
+    </article>'''
+    groups = []
+    for co, period, items in t['pgroups']:
+        cards = []
+        for yrs, name, desc, tags, link in items:
+            a = f'<a class="pc-link" href="{link[0]}" target="_blank" rel="noopener">{link[1]}</a>' if link else ''
+            tg = ''.join(f'<li>{x}</li>' for x in tags)
+            cards.append(f'<article class="pcard"><div class="pc-top"><h4>{name}</h4><span class="pc-when">{yrs}</span></div><p>{desc}</p><div class="pc-foot"><ul class="pc-tags">{tg}</ul>{a}</div></article>')
+        n = len(items)
+        count = t['n_delivery'] if n == 1 else t['n_deliveries'].replace('{n}', str(n))
+        groups.append(f'''    <div class="pgroup">
+      <div class="pg-head reveal"><span class="pg-dot" aria-hidden="true"></span><h3>{co}</h3><span class="pg-when">{period}</span><span class="pg-n">{count}</span></div>
+      <div class="pcards" data-stagger>{''.join(cards)}</div>
+    </div>''')
+    prows = flag + '\n    <div class="pgroups">\n' + '\n'.join(groups) + '\n    </div>'
     prods = '\n'.join(f'      <article class="prod"><div class="pt"><h3>{n}</h3><span class="badge">{b}</span></div><p>{d}</p></article>' for n, b, d in t['products'])
     a_p = '\n'.join(f'        <p>{p}</p>' for p in t['a_p'])
     degs = []
@@ -583,9 +627,7 @@ def page(t, theme, root, lang_href, alt_href, canonical):
 <section class="sec" id="projetos">
   <div class="wrap">
     <div class="sec-head reveal"><div><span class="kicker">{t['p_kicker']}</span><h2>{t['p_h']}</h2></div><p>{t['p_p']}</p></div>
-    <div class="plist" data-stagger>
 {prows}
-    </div>
     <h3 class="sub-h reveal">{t['prod_h']}</h3>
     <p class="sub-p reveal">{t['prod_p']}</p>
     <div class="products" data-stagger>
@@ -713,10 +755,12 @@ def markdown(t, lang):
         L.append('')
     L.append(f"## {'Projetos de destaque' if pt else 'Selected projects'}")
     L.append('')
-    for co, yrs, name, desc, link in t['projects']:
-        extra = f' ({link[0]})' if link else ''
-        when = f', {yrs}' if yrs else ''
-        L.append(f'- **{plain(name)}** ({co}{when}): {plain(desc)}{extra}')
+    fl = t['flag']
+    L.append(f"- **{fl['name']}** ({fl['co']}, {fl['when']}): {plain(fl['lead'])} " + '; '.join(f'{m}: {d}' for m, d in fl['mods']) + '.')
+    for co, period, items in t['pgroups']:
+        for yrs, name, desc, tags, link in items:
+            extra = f' ({link[0]})' if link else ''
+            L.append(f'- **{plain(name)}** ({co}, {yrs}): {plain(desc)}{extra}')
     L.append('')
     L.append(f"## {plain(t['prod_h'])}")
     L.append('')

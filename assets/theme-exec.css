@@ -117,3 +117,4 @@
   --intro-fill:#1F5FE8;
 }
 :root{--hl:rgba(31,95,232,.16);--lift:translateY(-3px);--shadow-lift:0 2px 4px rgba(14,23,38,.06),0 18px 36px -16px rgba(14,23,38,.28);--row-hover:#F6F8FB}
+:root{--flag-bg:#0E1726;--flag-ink:#FFFFFF;--flag-muted:#B4BFCD;--flag-border:0;--flag-shadow:0 24px 48px -24px rgba(14,23,38,.55);--flag-badge-bg:#1F5FE8;--flag-badge-ink:#FFFFFF;--flag-badge-border:0;--flag-chip-border:1px solid #33415C;--flag-tile:#16223A;--flag-tile-ink:#FFFFFF;--flag-tile-muted:#A9B4C3;--flag-tile-border:1px solid #26324A}
