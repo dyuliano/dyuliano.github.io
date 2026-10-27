@@ -1,4 +1,4 @@
-@page{size:A4;margin:14mm 15mm 14mm 15mm}
+@page{size:A4;margin:12mm 15mm 11mm 15mm}
 :root{--ink:#0B1622;--muted:#55636f;--brass:#9a7531;--line:#e3dccd;--soft:#f6f2ea}
 *{box-sizing:border-box}
 html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
@@ -15,7 +15,7 @@ h1 em{color:var(--brass)}
 .metric{background:var(--soft);border-radius:2.5mm;padding:3mm 3.2mm}
 .metric b{display:block;font-family:"Newsreader",serif;font-weight:500;font-size:16pt;line-height:1.05;color:var(--brass)}
 .metric span{font-size:8.2pt;color:var(--muted);line-height:1.3;display:block;margin-top:1mm}
-section{margin-top:4.6mm}
+section{margin-top:4mm}
 h2{font-size:13pt;color:var(--ink);padding-bottom:1.2mm;border-bottom:.6pt solid var(--line);margin-bottom:2.4mm}
 p{margin:0 0 2mm}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:2.2mm 6mm}
