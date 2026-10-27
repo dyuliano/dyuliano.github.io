@@ -116,3 +116,4 @@
   --intro-track:#26324A;
   --intro-fill:#1F5FE8;
 }
+:root{--hl:rgba(31,95,232,.16);--lift:translateY(-3px);--shadow-lift:0 2px 4px rgba(14,23,38,.06),0 18px 36px -16px rgba(14,23,38,.28);--row-hover:#F6F8FB}

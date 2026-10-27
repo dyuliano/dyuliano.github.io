@@ -39,7 +39,7 @@ T = {
     'og_img': 'assets/og.jpg', 'cv': 'assets/Dyuliano-Cecilio-Curriculo.pdf',
     'intro_cap': 'Dyuliano Cecilio · carreira em tecnologia',
     'nav_label': 'Seções', 'home': 'Início', 'role_short': 'Liderança em tecnologia',
-    'menu': [('resumo', 'Resumo'), ('impacto', 'Impacto'), ('trajetoria', 'Trajetória'), ('projetos', 'Projetos'), ('formacao', 'Formação'), ('contato', 'Contato')],
+    'menu': [('resumo', 'Resumo'), ('impacto', 'Impacto'), ('trajetoria', 'Trajetória'), ('projetos', 'Projetos'), ('formacao', 'Formação'), ('curriculo', 'Currículo')],
     'lang_label': 'EN', 'lang_aria': 'English version', 'lang_code': 'en',
     'menu_open': 'Abrir menu', 'menu_close': 'Fechar menu',
     'cv_btn': 'Currículo (PDF)',
@@ -58,9 +58,9 @@ T = {
     # resumo
     's_kicker': 'Resumo profissional', 's_h': 'Tecnologia que move o negócio',
     's_p': [
-        'Líder de tecnologia com mais de 15 anos dedicados ao ecossistema TOTVS Protheus. Conheço o ERP pelos dois lados, negócio e tecnologia: arquitetura, administração, mais de dez migrações de release, integrações e o redesenho de processos financeiros, fiscais, contábeis, de suprimentos, custos, produção e RH.',
-        'Minha principal marca é formar e liderar equipes de analistas e desenvolvedores. Priorizo demandas por capacidade, desenvolvo pessoas até se tornarem referência técnica e construo times autônomos e de alto desempenho. Já respondi por orçamento de tecnologia, roadmap e reporte direto à diretoria na indústria, no setor automotivo e no software.',
-        'Em paralelo, conduzo iniciativas de IA aplicada ao ERP: sou autor do primeiro modelo público de IA especializado em ADVPL no Hugging Face e desenvolvo plataformas corporativas próprias de gestão de pessoas, produtividade e IA conversacional para ERP.',
+        'Líder de tecnologia com <mark>mais de 15 anos dedicados ao ecossistema TOTVS Protheus</mark>. Conheço o ERP pelos dois lados, negócio e tecnologia: arquitetura, administração, mais de dez migrações de release, integrações e o redesenho de processos financeiros, fiscais, contábeis, de suprimentos, custos, produção e RH.',
+        'Minha principal marca é <mark>formar e liderar equipes de analistas e desenvolvedores</mark>. Priorizo demandas por capacidade, desenvolvo pessoas até se tornarem referência técnica e construo times autônomos e de alto desempenho. Já respondi por orçamento de tecnologia, roadmap e reporte direto à diretoria na indústria, no setor automotivo e no software.',
+        'Em paralelo, conduzo iniciativas de IA aplicada ao ERP: sou autor do <mark>primeiro modelo público de IA especializado em ADVPL</mark> no Hugging Face e desenvolvo plataformas corporativas próprias de gestão de pessoas, produtividade e IA conversacional para ERP.',
     ],
     'areas_h': 'Áreas de atuação',
     'areas': ['Gestão de equipes de tecnologia', 'Operações Cloud', 'SLA e TMR', 'TOTVS Protheus', 'Orçamento e governança de TI', 'Migração de ERP', 'Integrações e APIs', 'Retenção de clientes', 'IA aplicada e automação', 'Gestão de crise'],
@@ -185,6 +185,15 @@ T = {
     'cv_link': 'Currículo em PDF',
     'alt_theme': {'exec': 'Ver visual alternativo', 'neo': 'Ver visual executivo'},
     'top': 'Voltar ao topo',
+    'dl_done': 'Download iniciado',
+    'mba_lbl': '{p}% do curso concluído · término em ago. 2027',
+    'cv_kicker': 'Currículo', 'cv_h': 'Currículo pronto para download',
+    'cv_lead': 'Duas páginas com o mesmo conteúdo deste site, em estrutura limpa para recrutadores, sistemas de recrutamento (ATS) e ferramentas de IA.',
+    'cv_points': ['Texto real e pesquisável, sem imagens no lugar do conteúdo', 'Seções padrão: perfil, competências, experiência e formação', 'Versões em português e inglês, mais uma versão em texto puro para IA'],
+    'cv_main': 'Baixar PDF', 'cv_other': 'English PDF', 'cv_other_href': 'assets/Dyuliano-Cecilio-Resume.pdf',
+    'cv_md': 'Versão em texto (.md)', 'cv_md_href': 'curriculo.md', 'cv_thumb': 'assets/cv-pt.jpg', 'cv_thumb_back': 'assets/cv-pt-2.jpg',
+    'cv_thumb_alt': 'Prévia da primeira página do currículo em PDF',
+    'fab': 'Baixar currículo',
 },
 }
 
@@ -196,7 +205,7 @@ T['en'] = {
     'og_img': 'assets/og-en.jpg', 'cv': 'assets/Dyuliano-Cecilio-Resume.pdf',
     'intro_cap': 'Dyuliano Cecilio · a career in technology',
     'nav_label': 'Sections', 'home': 'Home', 'role_short': 'Technology leadership',
-    'menu': [('resumo', 'Summary'), ('impacto', 'Impact'), ('trajetoria', 'Career'), ('projetos', 'Projects'), ('formacao', 'Education'), ('contato', 'Contact')],
+    'menu': [('resumo', 'Summary'), ('impacto', 'Impact'), ('trajetoria', 'Career'), ('projetos', 'Projects'), ('formacao', 'Education'), ('curriculo', 'Résumé')],
     'lang_label': 'PT', 'lang_aria': 'Versão em português', 'lang_code': 'pt-BR',
     'menu_open': 'Open menu', 'menu_close': 'Close menu',
     'cv_btn': 'Résumé (PDF)',
@@ -214,9 +223,9 @@ T['en'] = {
     'email_lbl': 'Email',
     's_kicker': 'Professional summary', 's_h': 'Technology that moves the business',
     's_p': [
-        'Technology leader with more than 15 years dedicated to the TOTVS Protheus ecosystem, Latin America\'s leading ERP. I know it from both sides, business and technology: architecture, administration, more than ten release migrations, integrations and the redesign of finance, tax, accounting, procurement, costing, manufacturing and HR processes.',
-        'My hallmark is developing and leading teams of analysts and engineers. I prioritize by capacity, grow people into technical leads and build autonomous, high-performing teams. I have owned technology budgets and roadmaps and reported directly to the board in manufacturing, automotive and software.',
-        'Alongside that, I lead applied-AI initiatives for ERP: I created the first public AI model specialized in ADVPL on Hugging Face and build my own corporate platforms for people management, productivity and conversational AI for ERP.',
+        'Technology leader with <mark>more than 15 years dedicated to the TOTVS Protheus ecosystem</mark>, Latin America\'s leading ERP. I know it from both sides, business and technology: architecture, administration, more than ten release migrations, integrations and the redesign of finance, tax, accounting, procurement, costing, manufacturing and HR processes.',
+        'My hallmark is <mark>developing and leading teams of analysts and engineers</mark>. I prioritize by capacity, grow people into technical leads and build autonomous, high-performing teams. I have owned technology budgets and roadmaps and reported directly to the board in manufacturing, automotive and software.',
+        'Alongside that, I lead applied-AI initiatives for ERP: I created the <mark>first public AI model specialized in ADVPL</mark> on Hugging Face and build my own corporate platforms for people management, productivity and conversational AI for ERP.',
     ],
     'areas_h': 'Areas of expertise',
     'areas': ['Technology team leadership', 'Cloud operations', 'SLA and MTTR', 'TOTVS Protheus', 'IT budget and governance', 'ERP migration', 'Integrations and APIs', 'Customer retention', 'Applied AI and automation', 'Crisis management'],
@@ -333,6 +342,15 @@ T['en'] = {
     'cv_link': 'Résumé (PDF)',
     'alt_theme': {'exec': 'See alternative design', 'neo': 'See executive design'},
     'top': 'Back to top',
+    'dl_done': 'Download started',
+    'mba_lbl': '{p}% of the program complete · ends Aug 2027',
+    'cv_kicker': 'Résumé', 'cv_h': 'Résumé ready to download',
+    'cv_lead': 'Two pages with the same content as this site, in a clean structure for recruiters, applicant tracking systems (ATS) and AI tools.',
+    'cv_points': ['Real, searchable text, with no images standing in for content', 'Standard sections: profile, competencies, experience and education', 'English and Portuguese versions, plus a plain-text version for AI'],
+    'cv_main': 'Download PDF', 'cv_other': 'PDF em português', 'cv_other_href': 'assets/Dyuliano-Cecilio-Curriculo.pdf',
+    'cv_md': 'Plain-text version (.md)', 'cv_md_href': 'en/resume.md', 'cv_thumb': 'assets/cv-en.jpg', 'cv_thumb_back': 'assets/cv-en-2.jpg',
+    'cv_thumb_alt': 'Preview of the first page of the PDF résumé',
+    'fab': 'Download résumé',
 }
 
 PAGES = [
@@ -347,18 +365,26 @@ LINKS = [('LinkedIn', 'https://www.linkedin.com/in/dyuliano/'), ('GitHub', 'http
 EMAIL = 'dyulianocecilio@gmail.com'
 
 
+def dl_btn(t, href, label, cls, icon=True):
+    ic = ICONS['download'] if icon else ''
+    return f'<a class="btn {cls}" href="{href}" download data-dl>{ic}<span class="lbl"><span class="go">{label}</span><span class="done" aria-hidden="true">{t["dl_done"]}</span></span></a>'
+
+
+CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>'
+
+
 def page(t, theme, root, lang_href, alt_href, canonical):
     e = html.escape
     menu = '\n'.join(f'      <li><a href="#{i}">{l}</a></li>' for i, l in t['menu'])
-    facts = '\n'.join(f'          <div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in t['facts'])
+    facts = '\n'.join(f'          <div style="--i:{i}"><dt>{k}</dt><dd>{v}</dd></div>' for i, (k, v) in enumerate(t['facts']))
     links = ''.join(f'<a href="{u}" target="_blank" rel="noopener">{n}</a>' for n, u in LINKS)
     areas = ''.join(f'<li>{a}</li>' for a in t['areas'])
     summary = '\n'.join(f'        <p>{p}</p>' for p in t['s_p'])
     kpis = '\n'.join(
-        f'      <div class="kpi"><div class="n"><span data-to="{to}" data-prefix="{pre}">{pre}0</span><small>{suf}</small></div><p>{txt}</p></div>'
-        for to, pre, suf, txt in t['kpis'])
+        f'      <div class="kpi" style="--i:{i}"><div class="n"><span data-to="{to}" data-prefix="{pre}">{pre}0</span><small>{suf}</small></div><span class="bar" aria-hidden="true"></span><p>{txt}</p></div>'
+        for i, (to, pre, suf, txt) in enumerate(t['kpis']))
     pillars = '\n'.join(
-        f'''      <article class="pillar reveal"><div class="ic">{ICONS[ic]}</div><h3>{h}</h3><p>{p}</p><ul>{''.join(f'<li>{x}</li>' for x in tags)}</ul></article>'''
+        f'''      <article class="pillar"><div class="ic">{ICONS[ic]}</div><h3>{h}</h3><p>{p}</p><ul>{''.join(f'<li>{x}</li>' for x in tags)}</ul></article>'''
         for ic, h, p, tags in t['pillars'])
     jobs = []
     for j in t['jobs']:
@@ -387,7 +413,8 @@ def page(t, theme, root, lang_href, alt_href, canonical):
     degs = []
     for when, name, inst, desc, st, hl in t['degrees']:
         badge = f'<span class="st">{st}</span>' if st else ''
-        degs.append(f'        <article class="deg{" hl" if hl else ""}"><div class="when">{when}</div><div><h3>{name}{badge}</h3><div class="inst">{inst}</div><p>{desc}</p></div></article>')
+        prog = f'<div class="mba" data-start="2026-08-01" data-end="2027-08-31" data-label="{t["mba_lbl"]}"><div class="tr"><i></i></div><span></span></div>' if hl else ''
+        degs.append(f'        <article class="deg{" hl" if hl else ""}"><div class="when">{when}</div><div><h3>{name}{badge}</h3><div class="inst">{inst}</div><p>{desc}</p>{prog}</div></article>')
     degs = '\n'.join(degs)
     certs = ''
     for g, items in t['cert_groups']:
@@ -430,6 +457,7 @@ def page(t, theme, root, lang_href, alt_href, canonical):
 <link href="{FONTS[theme]}" rel="stylesheet">
 <link rel="stylesheet" href="{root}assets/theme-{theme}.css">
 <link rel="stylesheet" href="{root}assets/site.css">
+<link rel="stylesheet" href="{root}assets/motion.css">
 <script type="application/ld+json">
 {{"@context":"https://schema.org","@type":"Person","name":"Dyuliano Cecilio de Souza","jobTitle":"{t['p_role'].split(' · ')[0]}","worksFor":{{"@type":"Organization","name":"TOTVS"}},"address":{{"@type":"PostalAddress","addressCountry":"BR"}},"url":"{canonical}","sameAs":["https://www.linkedin.com/in/dyuliano/","https://github.com/dyuliano","https://huggingface.co/dyulianocecilio"]}}
 </script>
@@ -452,7 +480,7 @@ def page(t, theme, root, lang_href, alt_href, canonical):
     </nav>
     <div class="tools">
       <a class="lang" href="{lang_href}" hreflang="{t['lang_code']}" lang="{t['lang_code']}" aria-label="{t['lang_aria']}">{t['lang_label']}</a>
-      <a class="btn primary sm" href="{root}{t['cv']}" download>{ICONS['download']}{t['cv_btn']}</a>
+      {dl_btn(t, root + t['cv'], t['cv_btn'], 'primary sm')}
       <button class="menu-btn" id="menuBtn" aria-label="{t['menu_open']}" aria-expanded="false" aria-controls="menu" data-open="{t['menu_open']}" data-close="{t['menu_close']}"><i></i><i></i></button>
     </div>
   </div>
@@ -462,23 +490,23 @@ def page(t, theme, root, lang_href, alt_href, canonical):
 <section class="hero" id="inicio">
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>{t['eyebrow']}</p>
+      <p class="eyebrow" data-in style="--i:0"><span class="dot" aria-hidden="true"></span>{t['eyebrow']}</p>
       <h1><span>{t['h1'][0]}</span> <span>{t['h1'][1]}</span></h1>
-      <p class="title">{t['hero_title']}</p>
-      <p class="lede">{t['hero_lede']}</p>
-      <div class="actions">
+      <p class="title" data-in style="--i:2">{t['hero_title']}</p>
+      <p class="lede" data-in style="--i:3">{t['hero_lede']}</p>
+      <div class="actions" data-in style="--i:4">
         <a class="btn primary" href="#trajetoria">{t['cta1']}{ICONS['arrow']}</a>
-        <a class="btn ghost" href="{root}{t['cv']}" download>{ICONS['download']}{t['cta2']}</a>
+        {dl_btn(t, root + t['cv'], t['cta2'], 'ghost')}
       </div>
-      <div class="career" aria-hidden="true">
+      <div class="career" aria-hidden="true" data-in style="--i:5">
         <div class="lbl"><span>{cl[0]}</span><span>{cl[1]}</span><span>{cl[2]}</span></div>
-        <div class="track"><i></i></div>
+        <div class="track"><i id="careerFill"></i><span class="rider" id="careerRider"><b>2008</b></span></div>
         <div class="ticks">{ticks}</div>
       </div>
     </div>
-    <aside class="profile reveal" aria-label="{t['links_label']}">
+    <aside class="profile" data-in style="--i:3" aria-label="{t['links_label']}">
       <div class="head">
-        <div class="avatar"><img src="{root}assets/rosto.jpg" alt="{t['photo_alt']}" width="108" height="108"></div>
+        <div class="avatar"><span class="ring" aria-hidden="true"></span><img src="{root}assets/rosto.jpg" alt="{t['photo_alt']}" width="108" height="108"></div>
         <div class="who"><b>{t['p_name']}</b><span>{t['p_role']}</span></div>
       </div>
       <dl class="facts">
@@ -496,7 +524,7 @@ def page(t, theme, root, lang_href, alt_href, canonical):
       <div class="txt reveal">
 {summary}
       </div>
-      <aside class="areas reveal"><h3>{t['areas_h']}</h3><ul class="tags">{areas}</ul></aside>
+      <aside class="areas reveal"><h3>{t['areas_h']}</h3><ul class="tags" data-stagger>{areas}</ul></aside>
     </div>
   </div>
 </section>
@@ -534,13 +562,13 @@ def page(t, theme, root, lang_href, alt_href, canonical):
 <section class="sec" id="lideranca">
   <div class="wrap">
     <div class="sec-head reveal"><div><span class="kicker">{t['l_kicker']}</span><h2>{t['l_h']}</h2></div><p>{t['l_p']}</p></div>
-    <div class="pillars">
+    <div class="pillars" data-stagger>
 {pillars}
     </div>
   </div>
 </section>
 
-<div class="cos" aria-label="{t['cos_label']}"><div class="wrap"><ul>{cos}</ul></div></div>
+<div class="cos" aria-label="{t['cos_label']}"><div class="track"><ul>{cos}</ul><ul aria-hidden="true">{cos}</ul></div></div>
 
 <section class="sec alt" id="trajetoria">
   <div class="wrap">
@@ -555,12 +583,12 @@ def page(t, theme, root, lang_href, alt_href, canonical):
 <section class="sec" id="projetos">
   <div class="wrap">
     <div class="sec-head reveal"><div><span class="kicker">{t['p_kicker']}</span><h2>{t['p_h']}</h2></div><p>{t['p_p']}</p></div>
-    <div class="plist reveal">
+    <div class="plist" data-stagger>
 {prows}
     </div>
     <h3 class="sub-h reveal">{t['prod_h']}</h3>
     <p class="sub-p reveal">{t['prod_p']}</p>
-    <div class="products reveal">
+    <div class="products" data-stagger>
 {prods}
     </div>
   </div>
@@ -584,20 +612,43 @@ def page(t, theme, root, lang_href, alt_href, canonical):
   <div class="wrap">
     <div class="sec-head reveal"><div><span class="kicker">{t['f_kicker']}</span><h2>{t['f_h']}</h2></div><p>{t['f_p']}</p></div>
     <div class="edu-grid">
-      <div class="degrees reveal">
+      <div class="degrees" data-stagger>
 {degs}
       </div>
       <aside class="certs reveal">{certs}</aside>
     </div>
   </div>
 </section>
+
+<section class="sec alt cv-sec reveal" id="curriculo">
+  <div class="wrap">
+    <div class="cv-card">
+      <div>
+        <span class="kicker">{t['cv_kicker']}</span>
+        <h2>{t['cv_h']}</h2>
+        <p class="lead">{t['cv_lead']}</p>
+        <ul class="cv-points">{''.join(f'<li>{CHECK}<span>{x}</span></li>' for x in t['cv_points'])}</ul>
+        <div class="cv-actions">
+          {dl_btn(t, root + t['cv'], t['cv_main'], 'primary')}
+          {dl_btn(t, root + t['cv_other_href'], t['cv_other'], 'ghost')}
+          <a class="alt" href="{root}{t['cv_md_href']}">{t['cv_md']}</a>
+        </div>
+      </div>
+      <div class="cv-preview" aria-hidden="true">
+        <span class="sheet back"><img src="{root}{t['cv_thumb_back']}" alt="" width="600" height="849" loading="lazy"></span>
+        <a class="sheet" href="{root}{t['cv']}" download data-dl tabindex="-1"><img src="{root}{t['cv_thumb']}" alt="{t['cv_thumb_alt']}" width="600" height="849" loading="lazy"></a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
+{dl_btn(t, root + t['cv'], t['fab'], 'primary fab')}
 
 <footer class="foot" id="contato">
   <div class="wrap">
     <div class="foot-top">
       <div><b>Dyuliano Cecilio</b><p>{t['foot_role']}</p></div>
-      <nav aria-label="{t['foot_nav']}"><a href="mailto:{EMAIL}">{EMAIL}</a>{links}<a href="{root}{t['cv']}" download>{t['cv_link']}</a></nav>
+      <nav aria-label="{t['foot_nav']}"><a href="mailto:{EMAIL}">{EMAIL}</a>{links}<a href="{root}{t['cv']}" download data-dl>{t['cv_link']}</a></nav>
     </div>
     <div class="foot-base"><span>© <span data-year>2026</span> Dyuliano Cecilio de Souza · <a href="{alt_href}">{alt_label}</a></span><a href="#inicio">{t['top']}</a></div>
   </div>
@@ -609,7 +660,107 @@ def page(t, theme, root, lang_href, alt_href, canonical):
 '''
 
 
+def plain(x):
+    import re
+    return html.unescape(re.sub(r'<[^>]+>', '', x))
+
+
+def markdown(t, lang):
+    pt = lang == 'pt'
+    L = []
+    L.append('# Dyuliano Cecilio de Souza')
+    L.append('')
+    L.append(plain(t['hero_title']))
+    L.append('')
+    L.append(f"- {'Cargo atual' if pt else 'Current role'}: {t['p_role']}")
+    L.append(f"- {'Localização' if pt else 'Location'}: {'Brasil' if pt else 'Brazil'}")
+    L.append(f'- E-mail: {EMAIL}')
+    L.append('- LinkedIn: https://www.linkedin.com/in/dyuliano/')
+    L.append(f"- Site: {SITE}{'' if pt else 'en/'}")
+    L.append('- GitHub: https://github.com/dyuliano')
+    L.append('- Hugging Face: https://huggingface.co/dyulianocecilio')
+    L.append('')
+    L.append(f"## {'Resumo profissional' if pt else 'Professional summary'}")
+    L.append('')
+    for p_ in t['s_p']:
+        L.append(plain(p_))
+        L.append('')
+    L.append(f"## {'Resultados' if pt else 'Key results'}")
+    L.append('')
+    L.append(f"- 400 → 1.500+ {plain(t['big_cap'])}" if pt else f"- 400 → 1,500+ {plain(t['big_cap'])}")
+    for to, pre, suf, txt in t['kpis']:
+        sep = '' if suf == '+' else ' '
+        L.append(f'- {plain(pre)}{to}{sep}{suf}: {plain(txt)}')
+    L.append('')
+    L.append(f"## {'Áreas de atuação' if pt else 'Areas of expertise'}")
+    L.append('')
+    L.append(', '.join(t['areas']) + '.')
+    L.append('')
+    L.append(f"## {'Experiência profissional' if pt else 'Professional experience'}")
+    L.append('')
+    for j in t['jobs']:
+        L.append(f"### {j['role']} | {plain(j['org'])}")
+        L.append(f"{j['y']} {j['to']}")
+        L.append('')
+        if j.get('ladder'):
+            L.append(('Progressão: ' if pt else 'Progression: ') + ' → '.join(j['ladder']))
+            L.append('')
+        if j.get('ctx'):
+            L.append(plain(j['ctx']))
+            L.append('')
+        for b in j['b']:
+            L.append('- ' + plain(b))
+        L.append('')
+    L.append(f"## {'Projetos de destaque' if pt else 'Selected projects'}")
+    L.append('')
+    for co, yrs, name, desc, link in t['projects']:
+        extra = f' ({link[0]})' if link else ''
+        when = f', {yrs}' if yrs else ''
+        L.append(f'- **{plain(name)}** ({co}{when}): {plain(desc)}{extra}')
+    L.append('')
+    L.append(f"## {plain(t['prod_h'])}")
+    L.append('')
+    for n, b, d in t['products']:
+        L.append(f'- **{n}** ({b}): {plain(d)}')
+    L.append('')
+    L.append(f"## {'Formação acadêmica' if pt else 'Education'}")
+    L.append('')
+    for when, name, inst, desc, st, hl in t['degrees']:
+        st_ = f' ({st})' if st else ''
+        L.append(f'- **{name}**{st_}, {inst}, {when}. {plain(desc)}')
+    L.append('')
+    for g, items in t['cert_groups']:
+        L.append(f'### {g}')
+        L.append('')
+        for n, w in items:
+            L.append(f'- {plain(n)}, {w}')
+        L.append('')
+    return '\n'.join(L).rstrip() + '\n'
+
+
+LLMS = """# Dyuliano Cecilio de Souza
+
+> Technology leader in Brazil: Cloud operations at TOTVS, TOTVS Protheus ERP (15+ years), team leadership and applied AI. Author of the first public AI model specialized in ADVPL.
+
+## Résumé
+- [Currículo em texto (português)](https://dyuliano.github.io/curriculo.md)
+- [Résumé in plain text (English)](https://dyuliano.github.io/en/resume.md)
+- [Currículo em PDF](https://dyuliano.github.io/assets/Dyuliano-Cecilio-Curriculo.pdf)
+- [Résumé PDF](https://dyuliano.github.io/assets/Dyuliano-Cecilio-Resume.pdf)
+
+## Profiles
+- [LinkedIn](https://www.linkedin.com/in/dyuliano/)
+- [GitHub](https://github.com/dyuliano)
+- [Hugging Face](https://huggingface.co/dyulianocecilio)
+"""
+
+
 def main():
+    (ROOT / 'curriculo.md').write_text(markdown(T['pt'], 'pt'), encoding='utf-8')
+    (ROOT / 'en').mkdir(exist_ok=True)
+    (ROOT / 'en' / 'resume.md').write_text(markdown(T['en'], 'en'), encoding='utf-8')
+    (ROOT / 'llms.txt').write_text(LLMS, encoding='utf-8')
+    print('ok: curriculo.md, en/resume.md, llms.txt')
     for out, lang, theme, root, lang_href, alt_href, canonical in PAGES:
         dest = ROOT / out
         dest.parent.mkdir(parents=True, exist_ok=True)

@@ -26,6 +26,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/theme-exec.css">
 <link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="../assets/motion.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Dyuliano Cecilio de Souza","jobTitle":"Cloud Operations Coordinator","worksFor":{"@type":"Organization","name":"TOTVS"},"address":{"@type":"PostalAddress","addressCountry":"BR"},"url":"https://dyuliano.github.io/en/","sameAs":["https://www.linkedin.com/in/dyuliano/","https://github.com/dyuliano","https://huggingface.co/dyulianocecilio"]}
 </script>
@@ -48,12 +49,12 @@
       <li><a href="#trajetoria">Career</a></li>
       <li><a href="#projetos">Projects</a></li>
       <li><a href="#formacao">Education</a></li>
-      <li><a href="#contato">Contact</a></li>
+      <li><a href="#curriculo">Résumé</a></li>
     </ul>
     </nav>
     <div class="tools">
       <a class="lang" href="../" hreflang="pt-BR" lang="pt-BR" aria-label="Versão em português">PT</a>
-      <a class="btn primary sm" href="../assets/Dyuliano-Cecilio-Resume.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>Résumé (PDF)</a>
+      <a class="btn primary sm" href="../assets/Dyuliano-Cecilio-Resume.pdf" download data-dl><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg><span class="lbl"><span class="go">Résumé (PDF)</span><span class="done" aria-hidden="true">Download started</span></span></a>
       <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu" data-open="Open menu" data-close="Close menu"><i></i><i></i></button>
     </div>
   </div>
@@ -63,30 +64,30 @@
 <section class="hero" id="inicio">
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Cloud Operations Coordinator at TOTVS</p>
+      <p class="eyebrow" data-in style="--i:0"><span class="dot" aria-hidden="true"></span>Cloud Operations Coordinator at TOTVS</p>
       <h1><span>Dyuliano</span> <span>Cecilio</span></h1>
-      <p class="title">Technology leadership for Cloud operations, TOTVS Protheus ERP and AI applied to the business.</p>
-      <p class="lede">An 18-year career built from the inside out: from ADVPL development to running technology departments, budgets and critical environments, reporting directly to the board. Today, at TOTVS, Brazil's largest software company, I run a Cloud operation that grew from 400 to more than 1,500 customers with the same team.</p>
-      <div class="actions">
+      <p class="title" data-in style="--i:2">Technology leadership for Cloud operations, TOTVS Protheus ERP and AI applied to the business.</p>
+      <p class="lede" data-in style="--i:3">An 18-year career built from the inside out: from ADVPL development to running technology departments, budgets and critical environments, reporting directly to the board. Today, at TOTVS, Brazil's largest software company, I run a Cloud operation that grew from 400 to more than 1,500 customers with the same team.</p>
+      <div class="actions" data-in style="--i:4">
         <a class="btn primary" href="#trajetoria">View career<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14m0 0-6-6m6 6 6-6"/></svg></a>
-        <a class="btn ghost" href="../assets/Dyuliano-Cecilio-Resume.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>Download résumé</a>
+        <a class="btn ghost" href="../assets/Dyuliano-Cecilio-Resume.pdf" download data-dl><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg><span class="lbl"><span class="go">Download résumé</span><span class="done" aria-hidden="true">Download started</span></span></a>
       </div>
-      <div class="career" aria-hidden="true">
+      <div class="career" aria-hidden="true" data-in style="--i:5">
         <div class="lbl"><span>2008</span><span>18 years in technology</span><span>today</span></div>
-        <div class="track"><i></i></div>
+        <div class="track"><i id="careerFill"></i><span class="rider" id="careerRider"><b>2008</b></span></div>
         <div class="ticks"><span>Development</span><span>Technical lead</span><span>Management</span><span>Scale</span></div>
       </div>
     </div>
-    <aside class="profile reveal" aria-label="Contact and profiles">
+    <aside class="profile" data-in style="--i:3" aria-label="Contact and profiles">
       <div class="head">
-        <div class="avatar"><img src="../assets/rosto.jpg" alt="Photo of Dyuliano Cecilio" width="108" height="108"></div>
+        <div class="avatar"><span class="ring" aria-hidden="true"></span><img src="../assets/rosto.jpg" alt="Photo of Dyuliano Cecilio" width="108" height="108"></div>
         <div class="who"><b>Dyuliano Cecilio de Souza</b><span>Cloud Operations Coordinator · TOTVS</span></div>
       </div>
       <dl class="facts">
-          <div><dt>Current</dt><dd>TOTVS Fluig and Agro Cloud operations</dd></div>
-          <div><dt>Expertise</dt><dd>TOTVS Protheus, team leadership and AI</dd></div>
-          <div><dt>Education</dt><dd>Executive MBA in AI · FAAP</dd></div>
-          <div><dt>Based in</dt><dd>Brazil</dd></div>
+          <div style="--i:0"><dt>Current</dt><dd>TOTVS Fluig and Agro Cloud operations</dd></div>
+          <div style="--i:1"><dt>Expertise</dt><dd>TOTVS Protheus, team leadership and AI</dd></div>
+          <div style="--i:2"><dt>Education</dt><dd>Executive MBA in AI · FAAP</dd></div>
+          <div style="--i:3"><dt>Based in</dt><dd>Brazil</dd></div>
       </dl>
       <div class="links"><a href="mailto:dyulianocecilio@gmail.com">Email</a><a href="https://www.linkedin.com/in/dyuliano/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/dyuliano" target="_blank" rel="noopener">GitHub</a><a href="https://huggingface.co/dyulianocecilio" target="_blank" rel="noopener">Hugging Face</a></div>
     </aside>
@@ -98,11 +99,11 @@
     <div class="sec-head reveal"><div><span class="kicker">Professional summary</span><h2>Technology that moves the business</h2></div></div>
     <div class="summary">
       <div class="txt reveal">
-        <p>Technology leader with more than 15 years dedicated to the TOTVS Protheus ecosystem, Latin America's leading ERP. I know it from both sides, business and technology: architecture, administration, more than ten release migrations, integrations and the redesign of finance, tax, accounting, procurement, costing, manufacturing and HR processes.</p>
-        <p>My hallmark is developing and leading teams of analysts and engineers. I prioritize by capacity, grow people into technical leads and build autonomous, high-performing teams. I have owned technology budgets and roadmaps and reported directly to the board in manufacturing, automotive and software.</p>
-        <p>Alongside that, I lead applied-AI initiatives for ERP: I created the first public AI model specialized in ADVPL on Hugging Face and build my own corporate platforms for people management, productivity and conversational AI for ERP.</p>
+        <p>Technology leader with <mark>more than 15 years dedicated to the TOTVS Protheus ecosystem</mark>, Latin America's leading ERP. I know it from both sides, business and technology: architecture, administration, more than ten release migrations, integrations and the redesign of finance, tax, accounting, procurement, costing, manufacturing and HR processes.</p>
+        <p>My hallmark is <mark>developing and leading teams of analysts and engineers</mark>. I prioritize by capacity, grow people into technical leads and build autonomous, high-performing teams. I have owned technology budgets and roadmaps and reported directly to the board in manufacturing, automotive and software.</p>
+        <p>Alongside that, I lead applied-AI initiatives for ERP: I created the <mark>first public AI model specialized in ADVPL</mark> on Hugging Face and build my own corporate platforms for people management, productivity and conversational AI for ERP.</p>
       </div>
-      <aside class="areas reveal"><h3>Areas of expertise</h3><ul class="tags"><li>Technology team leadership</li><li>Cloud operations</li><li>SLA and MTTR</li><li>TOTVS Protheus</li><li>IT budget and governance</li><li>ERP migration</li><li>Integrations and APIs</li><li>Customer retention</li><li>Applied AI and automation</li><li>Crisis management</li></ul></aside>
+      <aside class="areas reveal"><h3>Areas of expertise</h3><ul class="tags" data-stagger><li>Technology team leadership</li><li>Cloud operations</li><li>SLA and MTTR</li><li>TOTVS Protheus</li><li>IT budget and governance</li><li>ERP migration</li><li>Integrations and APIs</li><li>Customer retention</li><li>Applied AI and automation</li><li>Crisis management</li></ul></aside>
     </div>
   </div>
 </section>
@@ -110,10 +111,10 @@
 <section class="kpis" aria-label="Key figures">
   <div class="wrap">
     <div class="kpi-grid">
-      <div class="kpi"><div class="n"><span data-to="1" data-prefix="R$ ">R$ 0</span><small>M+</small></div><p>in avoided costs by bringing ERP migration and infrastructure in-house</p></div>
-      <div class="kpi"><div class="n"><span data-to="18" data-prefix="&lt;">&lt;0</span><small>months</small></div><p>from specialist to manager, reporting directly to the board</p></div>
-      <div class="kpi"><div class="n"><span data-to="10" data-prefix="">0</span><small>+</small></div><p>professionals developed into technical leads and promoted</p></div>
-      <div class="kpi"><div class="n"><span data-to="150" data-prefix="">0</span><small>k</small></div><p>training examples behind the first public AI model in ADVPL</p></div>
+      <div class="kpi" style="--i:0"><div class="n"><span data-to="1" data-prefix="R$ ">R$ 0</span><small>M+</small></div><span class="bar" aria-hidden="true"></span><p>in avoided costs by bringing ERP migration and infrastructure in-house</p></div>
+      <div class="kpi" style="--i:1"><div class="n"><span data-to="18" data-prefix="&lt;">&lt;0</span><small>months</small></div><span class="bar" aria-hidden="true"></span><p>from specialist to manager, reporting directly to the board</p></div>
+      <div class="kpi" style="--i:2"><div class="n"><span data-to="10" data-prefix="">0</span><small>+</small></div><span class="bar" aria-hidden="true"></span><p>professionals developed into technical leads and promoted</p></div>
+      <div class="kpi" style="--i:3"><div class="n"><span data-to="150" data-prefix="">0</span><small>k</small></div><span class="bar" aria-hidden="true"></span><p>training examples behind the first public AI model in ADVPL</p></div>
     </div>
   </div>
 </section>
@@ -143,16 +144,16 @@
 <section class="sec" id="lideranca">
   <div class="wrap">
     <div class="sec-head reveal"><div><span class="kicker">How I lead</span><h2>Four fronts, in every company</h2></div><p>From manufacturing to software, the same way of working: decisions driven by capacity, people at the center and technology measured by results.</p></div>
-    <div class="pillars">
-      <article class="pillar reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div><h3>Strategy and governance</h3><p>Roadmap, capacity-based prioritization, risk and feasibility, reporting directly to the board and executive management.</p><ul><li>IT budget</li><li>Roadmap</li><li>Information security</li></ul></article>
-      <article class="pillar reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7"/><path d="M18 14.7c1.9.7 3.1 2.5 3.5 5.3"/></svg></div><h3>People and high performance</h3><p>Developing multidisciplinary analysts and engineers, career plans and autonomous teams.</p><ul><li>Mentoring</li><li>OKRs</li><li>Hybrid teams</li></ul></article>
-      <article class="pillar reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div><h3>Operations and customers</h3><p>Critical environments with SLA and MTTR under control, capacity and cost management and strategic account retention.</p><ul><li>SLA and MTTR</li><li>Churn</li><li>Crisis management</li></ul></article>
-      <article class="pillar reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 10h4v4h-4z"/></svg></div><h3>Innovation and applied AI</h3><p>AI in operations, in the team's routine and inside the ERP, with automation as the lever for scale.</p><ul><li>LLMs</li><li>Agents</li><li>Automation</li></ul></article>
+    <div class="pillars" data-stagger>
+      <article class="pillar"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div><h3>Strategy and governance</h3><p>Roadmap, capacity-based prioritization, risk and feasibility, reporting directly to the board and executive management.</p><ul><li>IT budget</li><li>Roadmap</li><li>Information security</li></ul></article>
+      <article class="pillar"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7"/><path d="M18 14.7c1.9.7 3.1 2.5 3.5 5.3"/></svg></div><h3>People and high performance</h3><p>Developing multidisciplinary analysts and engineers, career plans and autonomous teams.</p><ul><li>Mentoring</li><li>OKRs</li><li>Hybrid teams</li></ul></article>
+      <article class="pillar"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div><h3>Operations and customers</h3><p>Critical environments with SLA and MTTR under control, capacity and cost management and strategic account retention.</p><ul><li>SLA and MTTR</li><li>Churn</li><li>Crisis management</li></ul></article>
+      <article class="pillar"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 10h4v4h-4z"/></svg></div><h3>Innovation and applied AI</h3><p>AI in operations, in the team's routine and inside the ERP, with automation as the lever for scale.</p><ul><li>LLMs</li><li>Agents</li><li>Automation</li></ul></article>
     </div>
   </div>
 </section>
 
-<div class="cos" aria-label="Companies"><div class="wrap"><ul><li>TOTVS</li><li>Cinbal · Incoflandres Group</li><li>BMB Mode Center</li><li>BMB Tech</li><li>Fundação CSN</li><li>Grupo Toniato</li><li>ORMEC Engenharia</li><li>CSN</li></ul></div></div>
+<div class="cos" aria-label="Companies"><div class="track"><ul><li>TOTVS</li><li>Cinbal · Incoflandres Group</li><li>BMB Mode Center</li><li>BMB Tech</li><li>Fundação CSN</li><li>Grupo Toniato</li><li>ORMEC Engenharia</li><li>CSN</li></ul><ul aria-hidden="true"><li>TOTVS</li><li>Cinbal · Incoflandres Group</li><li>BMB Mode Center</li><li>BMB Tech</li><li>Fundação CSN</li><li>Grupo Toniato</li><li>ORMEC Engenharia</li><li>CSN</li></ul></div></div>
 
 <section class="sec alt" id="trajetoria">
   <div class="wrap">
@@ -180,7 +181,7 @@
 <section class="sec" id="projetos">
   <div class="wrap">
     <div class="sec-head reveal"><div><span class="kicker">Projects</span><h2>Selected deliveries</h2></div><p>Systems that changed how companies operate, always integrated with the ERP and built with in-house teams.</p></div>
-    <div class="plist reveal">
+    <div class="plist" data-stagger>
       <div class="prow"><div class="co">BMB Mode Center<small>2019–2021</small></div><h3>Monte Sua Solução</h3><p>Web configurator where customers build their own truck. Integrated with Protheus: it enforces the SG1 bill-of-materials rules and lands in the sales module as a quotation request. <a href="https://www.modecenter.com.br/solucao" target="_blank" rel="noopener">See it live</a></p></div>
       <div class="prow"><div class="co">BMB Mode Center<small>2020–2021</small></div><h3>ROTA</h3><p>Customer portal to track each order in real time, from request through production to invoicing.</p></div>
       <div class="prow"><div class="co">BMB Mode Center<small>2020–2021</small></div><h3>Budget planning</h3><p>Budget versus actuals by cost center in a dashboard, with the data feeding machine learning models.</p></div>
@@ -194,7 +195,7 @@
     </div>
     <h3 class="sub-h reveal">Own platforms</h3>
     <p class="sub-p reveal">Products I build for the corporate market, focused on management, people and AI applied to ERP.</p>
-    <div class="products reveal">
+    <div class="products" data-stagger>
       <article class="prod"><div class="pt"><h3>SinergIA</h3><span class="badge">Work management</span></div><p>Modular corporate platform connecting work management, people, knowledge and AI, with a time and productivity module.</p></article>
       <article class="prod"><div class="pt"><h3>Pulse</h3><span class="badge">HR SaaS</span></div><p>The whole employee journey in one B2B platform: recruiting, digital onboarding paperwork, ERP and eSocial, onboarding, time tracking, performance, IDP and 9-box.</p></article>
       <article class="prod"><div class="pt"><h3>MarIA</h3><span class="badge">AI for ERP</span></div><p>Conversational AI for ERPs: natural-language questions about inventory, finance, procurement, billing and HR, with auditable answers.</p></article>
@@ -224,8 +225,8 @@
   <div class="wrap">
     <div class="sec-head reveal"><div><span class="kicker">Education</span><h2>Education and certifications</h2></div><p>A technical foundation in engineering and information systems, with specializations in software, data and now AI applied to business.</p></div>
     <div class="edu-grid">
-      <div class="degrees reveal">
-        <article class="deg hl"><div class="when">2026–2027</div><div><h3>Executive MBA, Artificial Intelligence Applied to Business<span class="st">In progress</span></h3><div class="inst">FAAP · Fundação Armando Alvares Penteado</div><p>Generative AI and LLMs, machine learning, AI strategy and governance, intelligent automation and leadership in digital environments.</p></div></article>
+      <div class="degrees" data-stagger>
+        <article class="deg hl"><div class="when">2026–2027</div><div><h3>Executive MBA, Artificial Intelligence Applied to Business<span class="st">In progress</span></h3><div class="inst">FAAP · Fundação Armando Alvares Penteado</div><p>Generative AI and LLMs, machine learning, AI strategy and governance, intelligent automation and leadership in digital environments.</p><div class="mba" data-start="2026-08-01" data-end="2027-08-31" data-label="{p}% of the program complete · ends Aug 2027"><div class="tr"><i></i></div><span></span></div></div></article>
         <article class="deg"><div class="when">2020–2021</div><div><h3>Postgraduate degree, Software Engineering</h3><div class="inst">Universidade Anhanguera</div><p>Software architecture, development, quality and lifecycle management.</p></div></article>
         <article class="deg"><div class="when">2016–2019</div><div><h3>Bachelor's degree, Information Systems</h3><div class="inst">UGB · Centro Universitário Geraldo Di Biase</div><p>Software development, databases and technology management.</p></div></article>
         <article class="deg"><div class="when">2013–2016</div><div><h3>Control and Automation Engineering</h3><div class="inst">UBM · Centro Universitário de Barra Mansa</div><p>Automation, control systems and the integration of technology with industrial processes.</p></div></article>
@@ -235,13 +236,36 @@
     </div>
   </div>
 </section>
+
+<section class="sec alt cv-sec reveal" id="curriculo">
+  <div class="wrap">
+    <div class="cv-card">
+      <div>
+        <span class="kicker">Résumé</span>
+        <h2>Résumé ready to download</h2>
+        <p class="lead">Two pages with the same content as this site, in a clean structure for recruiters, applicant tracking systems (ATS) and AI tools.</p>
+        <ul class="cv-points"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Real, searchable text, with no images standing in for content</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Standard sections: profile, competencies, experience and education</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>English and Portuguese versions, plus a plain-text version for AI</span></li></ul>
+        <div class="cv-actions">
+          <a class="btn primary" href="../assets/Dyuliano-Cecilio-Resume.pdf" download data-dl><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg><span class="lbl"><span class="go">Download PDF</span><span class="done" aria-hidden="true">Download started</span></span></a>
+          <a class="btn ghost" href="../assets/Dyuliano-Cecilio-Curriculo.pdf" download data-dl><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg><span class="lbl"><span class="go">PDF em português</span><span class="done" aria-hidden="true">Download started</span></span></a>
+          <a class="alt" href="../en/resume.md">Plain-text version (.md)</a>
+        </div>
+      </div>
+      <div class="cv-preview" aria-hidden="true">
+        <span class="sheet back"><img src="../assets/cv-en-2.jpg" alt="" width="600" height="849" loading="lazy"></span>
+        <a class="sheet" href="../assets/Dyuliano-Cecilio-Resume.pdf" download data-dl tabindex="-1"><img src="../assets/cv-en.jpg" alt="Preview of the first page of the PDF résumé" width="600" height="849" loading="lazy"></a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
+<a class="btn primary fab" href="../assets/Dyuliano-Cecilio-Resume.pdf" download data-dl><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg><span class="lbl"><span class="go">Download résumé</span><span class="done" aria-hidden="true">Download started</span></span></a>
 
 <footer class="foot" id="contato">
   <div class="wrap">
     <div class="foot-top">
       <div><b>Dyuliano Cecilio</b><p>Technology leadership, Cloud operations, ERP and applied AI. Brazil.</p></div>
-      <nav aria-label="Contact"><a href="mailto:dyulianocecilio@gmail.com">dyulianocecilio@gmail.com</a><a href="https://www.linkedin.com/in/dyuliano/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/dyuliano" target="_blank" rel="noopener">GitHub</a><a href="https://huggingface.co/dyulianocecilio" target="_blank" rel="noopener">Hugging Face</a><a href="../assets/Dyuliano-Cecilio-Resume.pdf" download>Résumé (PDF)</a></nav>
+      <nav aria-label="Contact"><a href="mailto:dyulianocecilio@gmail.com">dyulianocecilio@gmail.com</a><a href="https://www.linkedin.com/in/dyuliano/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/dyuliano" target="_blank" rel="noopener">GitHub</a><a href="https://huggingface.co/dyulianocecilio" target="_blank" rel="noopener">Hugging Face</a><a href="../assets/Dyuliano-Cecilio-Resume.pdf" download data-dl>Résumé (PDF)</a></nav>
     </div>
     <div class="foot-base"><span>© <span data-year>2026</span> Dyuliano Cecilio de Souza · <a href="../v2/en/">See alternative design</a></span><a href="#inicio">Back to top</a></div>
   </div>

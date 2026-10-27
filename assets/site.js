@@ -8,7 +8,33 @@
   const ease = t => 1 - Math.pow(1 - t, 3);
 
   /* abertura: anos de carreira até o ano atual (uma vez por sessão) */
-  const start = () => { document.body.classList.remove('loading'); document.body.classList.add('ready'); };
+  const start = () => { document.body.classList.remove('loading'); document.body.classList.add('ready'); career(); };
+
+  /* barra de carreira: marcador viaja de 2008 até o ano atual */
+  function career() {
+    const fill = $('#careerFill'), rider = $('#careerRider'); if (!fill) return;
+    const yEl = $('b', rider), ticks = $$('.career .ticks span');
+    const y0 = 2008, y1 = new Date().getFullYear();
+    const set = p => {
+      const w = (p * 100) + '%';
+      fill.style.width = w; rider.style.left = w;
+      yEl.textContent = Math.round(y0 + (y1 - y0) * p);
+      ticks.forEach((t, i) => t.classList.toggle('on', p >= i / (ticks.length - 1) - .001));
+    };
+    if (reduce) { set(1); return; }
+    set(0);
+    setTimeout(() => {
+      const t0 = performance.now(), d = 2200;
+      const step = now => { const p = Math.min(1, (now - t0) / d); set(p < .5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2); if (p < 1) requestAnimationFrame(step); };
+      requestAnimationFrame(step);
+    }, 900);
+  }
+
+  /* índices para entradas em sequência */
+  $$('[data-stagger]').forEach(g => [...g.children].forEach((c, i) => c.style.setProperty('--i', i)));
+  $$('.job ul, .ladder').forEach(g => [...g.children].forEach((c, i) => c.style.setProperty('--i', i)));
+  $$('.pillar').forEach((p, i) => p.style.setProperty('--i', i));
+  $$('.pillar .ic svg *').forEach(el => el.setAttribute('pathLength', '1'));
   const intro = $('#intro');
   let seen = false;
   try { seen = sessionStorage.getItem('introSeen') === '1'; sessionStorage.setItem('introSeen', '1'); } catch (e) {}
@@ -72,8 +98,34 @@
     if (!e.isIntersecting) return;
     e.target.classList.add('in'); io.unobserve(e.target);
     $$('[data-to]', e.target).forEach(countUp);
+    $$('.mba', e.target).forEach(mba);
   }), { threshold: .15, rootMargin: '0px 0px -6% 0px' });
-  $$('.reveal, .job, .kpis').forEach(el => io.observe(el));
+  $$('.reveal, .job, .kpis, [data-stagger]').forEach(el => io.observe(el));
+
+  /* progresso real do MBA pela data de hoje */
+  function mba(el) {
+    const a = new Date(el.dataset.start), b = new Date(el.dataset.end), now = new Date();
+    const p = Math.max(0, Math.min(1, (now - a) / (b - a)));
+    $('i', el).style.width = (p * 100).toFixed(1) + '%';
+    $('span', el).textContent = el.dataset.label.replace('{p}', Math.round(p * 100));
+  }
+
+  /* confirmação ao baixar o currículo */
+  $$('[data-dl]').forEach(a => a.addEventListener('click', () => {
+    const b = a.classList.contains('btn') ? a : null; if (!b) return;
+    b.classList.add('downloaded'); clearTimeout(b._t);
+    b._t = setTimeout(() => b.classList.remove('downloaded'), 2600);
+  }));
+
+  /* botão flutuante de currículo no celular */
+  (() => {
+    const fab = $('.fab'), hero = $('#inicio'), cv = $('#curriculo'); if (!fab) return;
+    let heroOut = false, cvIn = false;
+    const upd = () => fab.classList.toggle('show', heroOut && !cvIn);
+    new IntersectionObserver(([e]) => { heroOut = !e.isIntersecting; upd(); }, { threshold: 0 }).observe(hero);
+    new IntersectionObserver(([e]) => { cvIn = e.isIntersecting; upd(); }, { threshold: 0 }).observe(cv);
+    new IntersectionObserver(([e]) => { if (e.isIntersecting) { cvIn = true; upd(); } }, { threshold: 0 }).observe($('#contato'));
+  })();
 
   /* 400 → 1.500: clientes chegam das bordas e se ligam à mesma equipe */
   (() => {

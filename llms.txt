@@ -1,0 +1,14 @@
+# Dyuliano Cecilio de Souza
+
+> Technology leader in Brazil: Cloud operations at TOTVS, TOTVS Protheus ERP (15+ years), team leadership and applied AI. Author of the first public AI model specialized in ADVPL.
+
+## Résumé
+- [Currículo em texto (português)](https://dyuliano.github.io/curriculo.md)
+- [Résumé in plain text (English)](https://dyuliano.github.io/en/resume.md)
+- [Currículo em PDF](https://dyuliano.github.io/assets/Dyuliano-Cecilio-Curriculo.pdf)
+- [Résumé PDF](https://dyuliano.github.io/assets/Dyuliano-Cecilio-Resume.pdf)
+
+## Profiles
+- [LinkedIn](https://www.linkedin.com/in/dyuliano/)
+- [GitHub](https://github.com/dyuliano)
+- [Hugging Face](https://huggingface.co/dyulianocecilio)
